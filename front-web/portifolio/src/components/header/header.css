@@ -1,11 +1,17 @@
 header {
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
     height: 5pc;
-    background-color: #cd524a;
+    background-color: #b9f75d;
     padding: 0px 20px;
+    border-bottom: 2px solid #fa0bfe;
+    box-shadow: 0px 4px 5px #fa0bfe;
+
 }
+
+/* #cd524a vermelho */
 
 #menu-icon-content {
     /* visibility: hidden; */
@@ -20,11 +26,12 @@ header {
 
 #nav-bar a {
     text-decoration: none;
-    color: white;
+    transition: transform 0.3s;
 }
 
 #nav-bar a:hover {
-    color: black;
+    color: #fa0bfe;
+    transform: scale(1.1);
 }
 
 #items-content {

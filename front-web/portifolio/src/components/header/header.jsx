@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import './header.css';
 
-import menu_icon from "../../../public/assets/menu.png"
+import menu_icon from "../../assets/menu.png"
 import { ThemeSelect } from "../themeSelect/themeSelect"
 
 const Header = () => {
@@ -14,6 +14,7 @@ const Header = () => {
       <section id="nav-bar">
         <a href="">Sobre</a>
         <a href="">Certificados</a>
+        <a href="">Tecnologias</a>
         <a href="">Projetos</a>
         <a href="">Contatos</a>
       </section>

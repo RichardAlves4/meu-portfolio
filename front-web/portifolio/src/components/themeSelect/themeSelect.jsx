@@ -2,9 +2,9 @@ import { useState } from 'react';
 import './ThemeSelector.css';
 
 const themes = [
-  { id: 'default', name: 'Padrão', img: '../../../public/assets/default-mode.png' },
-  { id: 'dark', name: 'Dark mode', img: '../../../public/assets/dark-mode.png' },
-  { id: 'red', name: 'Red Mode', img: '../../../public/assets/red-mode.png' },
+  { id: 'default', name: 'Padrão', img: '../../src/assets/default-mode.png' },
+  { id: 'dark', name: 'Dark mode', img: '../../src/assets/dark-mode.png' },
+  { id: 'red', name: 'Red Mode', img: '../../src/assets/red-mode.png' },
 ];
 
 const ThemeSelect = () => {

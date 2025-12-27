@@ -1,0 +1,43 @@
+#about-content {
+    background-color: #8d25d5;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#photo-text-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#my-photo {
+    width: 300px;
+    border: 5px solid #b9f75d;
+    border-radius: 10px;
+}
+
+#photo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#text-about-content h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#about-text {
+    width: 500px;
+    word-wrap: break-word;
+    text-align: justify;
+    color: #fff;
+}
+
+.about-keyWord {
+    color: #b9f75d;
+    font-weight: bold;
+}
