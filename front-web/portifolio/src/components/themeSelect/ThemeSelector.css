@@ -1,0 +1,66 @@
+.theme-container {
+    position: relative;
+    display: block;
+    align-items: center;
+    
+}
+    
+.selected-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+    
+.selected-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+    
+.options-grid {
+    position: absolute;
+    display: flex;
+    top: 100%;   
+    left: 50%;      
+    transform: translateX(-50%); 
+    gap: 20px;
+    padding: 15px;
+    z-index: 99;
+}
+    
+.option-item {
+    width: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Empilha os itens */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center;     /* Garante que o texto interno não alinhe à esquerda */
+    gap: 8px;
+
+}
+    
+.option-item img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    
+}
+
+.option-item span {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease; 
+    white-space: nowrap;
+  }
+  
+  .option-item:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
