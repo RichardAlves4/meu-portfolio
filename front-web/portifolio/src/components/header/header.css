@@ -3,9 +3,11 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 5pc;
-    background-color: #cd524a;
+    background-color: #b9f75d;
     padding: 0px 20px;
 }
+
+/* #cd524a vermelho */
 
 #menu-icon-content {
     /* visibility: hidden; */
@@ -20,11 +22,12 @@ header {
 
 #nav-bar a {
     text-decoration: none;
-    color: white;
+    transition: transform 0.3s;
 }
 
 #nav-bar a:hover {
-    color: black;
+    color: #fa0bfe;
+    transform: scale(1.1);
 }
 
 #items-content {

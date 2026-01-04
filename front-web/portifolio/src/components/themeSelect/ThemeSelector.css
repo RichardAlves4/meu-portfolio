@@ -8,7 +8,7 @@
 .selected-box {
     width: 24px;
     height: 24px;
-    border: 2px solid #000;
+    border: 2px solid #fa0bfe;
     border-radius: 100%;
     cursor: pointer;
 
@@ -48,7 +48,6 @@
 .option-item img {
     width: 24px;
     height: 24px;
-    border: 1px solid #eee;
     border-radius: 100%;
     
 }
