@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <section id="menu-icon-content">
-        <img src={menu_icon} alt="" />
+        <img src={menu_icon} alt=""/>
       </section>
 
       <section id="nav-bar">

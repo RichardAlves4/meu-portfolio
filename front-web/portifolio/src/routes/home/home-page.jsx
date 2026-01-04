@@ -1,11 +1,27 @@
 import { Link } from "react-router-dom";
-import "./home-page.css"
+import "./home-page.css";
 
-import myPhoto from "../../assets/richard.jpg"
+import myPhoto from "../../assets/richard.jpg";
+import HTML_icon from "../../assets/tech/html-5.png";
+import CSS_icon from "../../assets/tech/css-3.png";
+import JS_icon from "../../assets/tech/js.png";
+import Python_icon from "../../assets/tech/python.png";
+import C_icon from "../../assets/tech/c.png";
+import JAVA_icon from "../../assets/tech/java.png";
+import AWS_icon from "../../assets/tech/aws.png";
+import NodeJS_icon from "../../assets/tech/nodejs.png";
+import React_icon from "../../assets/tech/react.png";
+import Vite_icon from "../../assets/tech/vite.png";
+import Figma_icon from "../../assets/tech/figma.png";
+import MySQL_icon from "../../assets/tech/mysql.png";
+import DBeaver_icon from "../../assets/tech/DBeaver.png";
+import postman from "../../assets/tech/postman.png";
+
 
 const Home = () => {
   return (
     <main>
+      <hr />
       <section id="about-content">
         <h1>SOBRE</h1>
 
@@ -31,11 +47,92 @@ const Home = () => {
               situações reais do coditiano de um programador nas empresas. Atualmente 
               meu <span className="about-keyWord">objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
           </div>
-
         </div>
-       
       </section>
 
+      <hr />
+
+      <section id="certificates-content">
+        <h1>CERTIFICADOS</h1>
+      </section>
+
+      <hr />
+
+      <section id="technologies-content">
+        <h1>TECNOLOGIAS</h1>
+
+        <div id="technologies-icons-content">
+          <div className="technologies-icons">
+            <img src={HTML_icon} alt="" />
+            <p>HTML</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={CSS_icon} alt="" />
+            <p>CSS</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={JS_icon} alt="" />
+            <p>Java Script</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={Python_icon} alt="" />
+            <p>Python</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={C_icon} alt="" />
+            <p>C</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={JAVA_icon} alt="" />
+            <p>JAVA</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={AWS_icon} alt="" />
+            <p>AWS</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={NodeJS_icon} alt="" />
+            <p>Node</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={React_icon} alt="" />
+            <p>React</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={Vite_icon} alt="" />
+            <p>Vite</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={Figma_icon} alt="" />
+            <p>Figma</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={MySQL_icon} alt="" />
+            <p>MySQL</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={postman} alt="" />
+            <p>Postman</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={DBeaver_icon} alt="" />
+            <p>DBeaver</p>
+          </div>
+        </div>
+      </section>
     </main>
   ) 
 }
