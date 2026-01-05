@@ -13,9 +13,10 @@ const Header = () => {
 
       <section id="nav-bar">
         <a href="">Sobre</a>
+        <a href="">Formação</a>
         <a href="">Certificados</a>
-        <a href="">Tecnologias</a>
         <a href="">Projetos</a>
+        <a href="">Tecnologias</a>
         <a href="">Contatos</a>
       </section>
 

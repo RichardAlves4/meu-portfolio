@@ -41,6 +41,7 @@ const Footer = () => {
         
         <div id="pageanchors-content">
           <a href="">Sobre</a>
+          <a href="">Formação</a>
           <a href="">Certificados</a>
           <a href="">Tecnologias</a>
           <a href="">Projetos</a>

@@ -8,14 +8,22 @@ import JS_icon from "../../assets/tech/js.png";
 import Python_icon from "../../assets/tech/python.png";
 import C_icon from "../../assets/tech/c.png";
 import JAVA_icon from "../../assets/tech/java.png";
+import springboot_icon from "../../assets/tech/spring-boot.png";
 import AWS_icon from "../../assets/tech/aws.png";
 import NodeJS_icon from "../../assets/tech/nodejs.png";
 import React_icon from "../../assets/tech/react.png";
+import reactnative_icon from "../../assets/tech/react.png";
 import Vite_icon from "../../assets/tech/vite.png";
+import github_icon from "../../assets/tech/github.png";
+import git_icon from "../../assets/tech/git.png";
 import Figma_icon from "../../assets/tech/figma.png";
 import MySQL_icon from "../../assets/tech/mysql.png";
+import postgre_icon from "../../assets/tech/postgre.png";
 import DBeaver_icon from "../../assets/tech/DBeaver.png";
 import postman from "../../assets/tech/postman.png";
+
+
+
 
 
 const Home = () => {
@@ -93,13 +101,18 @@ const Home = () => {
           </div>
 
           <div className="technologies-icons">
+            <img src={springboot_icon} alt="" />
+            <p>Spring Boot</p>
+          </div>
+
+          <div className="technologies-icons">
             <img src={AWS_icon} alt="" />
             <p>AWS</p>
           </div>
 
           <div className="technologies-icons">
             <img src={NodeJS_icon} alt="" />
-            <p>Node</p>
+            <p>NodeJS</p>
           </div>
 
           <div className="technologies-icons">
@@ -108,8 +121,23 @@ const Home = () => {
           </div>
 
           <div className="technologies-icons">
+            <img src={reactnative_icon} alt="" />
+            <p>React Native</p>
+          </div>
+
+          <div className="technologies-icons">
             <img src={Vite_icon} alt="" />
             <p>Vite</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={github_icon} alt="" />
+            <p>Github</p>
+          </div>
+
+          <div className="technologies-icons">
+            <img src={git_icon} alt="" />
+            <p>Git</p>
           </div>
 
           <div className="technologies-icons">
@@ -120,6 +148,11 @@ const Home = () => {
           <div className="technologies-icons">
             <img src={MySQL_icon} alt="" />
             <p>MySQL</p>
+          </div>
+          
+          <div className="technologies-icons">
+            <img src={postgre_icon} alt="" />
+            <p>PostgreSQL</p>
           </div>
 
           <div className="technologies-icons">
