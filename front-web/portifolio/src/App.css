@@ -3,3 +3,26 @@
     margin: 0;
     font-family: "Saira", sans-serif;
 }
+
+/* 1. Tamanho da barra */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* 2. O fundo da barra (Track) */
+html::-webkit-scrollbar-track {
+  background: transparent; /* Remove qualquer cor de fundo */
+}
+
+/* 3. O marcador (Thumb) */
+::-webkit-scrollbar-thumb {
+  background: #fa0bfe;
+  border-radius: 10px;
+  border: 2px solid #fff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c70aca;
+    
+}
+
