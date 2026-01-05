@@ -54,6 +54,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #8d25d5;
+    padding: 10px 0px;
 }
 
 #technologies-icons-content {
