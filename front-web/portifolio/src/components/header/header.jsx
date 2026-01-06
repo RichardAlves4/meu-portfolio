@@ -26,7 +26,7 @@ const Header = () => {
         </div>
 
         <div>
-           <button /*onClick={language()}*/>BR</button> 
+           <button>BR</button> 
         </div>
       </section>
 

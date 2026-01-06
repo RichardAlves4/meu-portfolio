@@ -9,7 +9,7 @@ import instagram from "../../assets/footer-icons/instagram.png"
 const Footer = () => {
   return (
     <footer>
-        <h1>Rede/Contato</h1>
+        <h1 className="porple">REDE/CONTATO</h1>
 
         <section id="anchors-content">
         <div id="media-content">
@@ -43,8 +43,8 @@ const Footer = () => {
           <a href="">Sobre</a>
           <a href="">Formação</a>
           <a href="">Certificados</a>
-          <a href="">Tecnologias</a>
           <a href="">Projetos</a>
+          <a href="">Tecnologias</a>
           <a href="">Contatos</a>
         </div>
       </section>
