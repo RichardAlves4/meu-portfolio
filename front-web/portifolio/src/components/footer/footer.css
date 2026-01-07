@@ -3,7 +3,8 @@ footer {
   flex-direction: column;
   background-color: #b9f75d;
   justify-content: space-between;
-  height: 300px;
+  height: 200px;
+  padding-top: 30px;
 }
 
 h4 {
@@ -13,24 +14,20 @@ h4 {
 
 #anchors-content {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 #media-content {
   display: flex;
+  gap: 20px;
 }
 
 .media-icon {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
   text-decoration: none;
   position: relative;
-  padding-bottom: 20px;
-  
+  justify-content: center;
 }
 
 .media-icon p {
@@ -38,7 +35,8 @@ h4 {
   visibility: hidden;
   transition: opacity 0.3s ease;
   position: absolute; 
-  top: 65%;         
+  top: 100%;
+         
   white-space: nowrap;
 }
 
@@ -52,16 +50,16 @@ h4 {
   display: flex;
   margin-top: 20px;
   text-decoration: none;
-  gap: 10px;
+  gap: 15px;
 
 }
 
 #pageanchors-content a {
   text-decoration: none;
   transition: transform 0.3s;
+  color: #8d25d5;
 }
 
 #pageanchors-content a:hover {
-    color: #fa0bfe;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }

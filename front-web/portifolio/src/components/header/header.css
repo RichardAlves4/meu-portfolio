@@ -16,18 +16,18 @@ header {
 
 #nav-bar {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     
 }
 
 #nav-bar a {
     text-decoration: none;
     transition: transform 0.3s;
+    color: #8d25d5;
 }
 
 #nav-bar a:hover {
-    color: #fa0bfe;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #items-content {
