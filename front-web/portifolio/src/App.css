@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
-    font-family: "Quantico", sans-serif;
+    font-family: "Saira", sans-serif;
 }
 
-.porple {
-  color: #8d25d5;
-}
-
-.green {
-  color: #b9f75d;
-}
-
+/* 1. Tamanho da barra */
 ::-webkit-scrollbar {
   width: 16px;
 }
 
-::-webkit-scrollbar-thumb {
+/* 2. O fundo da barra (Track) */
+html::-webkit-scrollbar-track {
+  background: transparent; /* Remove qualquer cor de fundo */
+}
 
+/* 3. O marcador (Thumb) */
+::-webkit-scrollbar-thumb {
+  background: #fa0bfe;
   border-radius: 10px;
   border: 2px solid #fff; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-
+    background: #c70aca;
     
 }
+

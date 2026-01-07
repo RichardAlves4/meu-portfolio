@@ -1,40 +1,29 @@
 import { Link } from "react-router-dom";
-import { Certificados } from "../../components/certificados/certificados"
-
 import "./home-page.css";
 
 import myPhoto from "../../assets/richard.jpg";
-
-import Sesi_icon from "../../assets/tech/sesi.png";
-import Senai_icon from "../../assets/tech/senai.png";
-import Unip_icon from "../../assets/tech/unip.png";
-import Hashtag_icon from "../../assets/tech/hashtag.png";
-
 import HTML_icon from "../../assets/tech/html-5.png";
 import CSS_icon from "../../assets/tech/css-3.png";
 import JS_icon from "../../assets/tech/js.png";
 import Python_icon from "../../assets/tech/python.png";
 import C_icon from "../../assets/tech/c.png";
 import JAVA_icon from "../../assets/tech/java.png";
-import springboot_icon from "../../assets/tech/spring-boot.png";
 import AWS_icon from "../../assets/tech/aws.png";
 import NodeJS_icon from "../../assets/tech/nodejs.png";
 import React_icon from "../../assets/tech/react.png";
-import reactnative_icon from "../../assets/tech/react.png";
 import Vite_icon from "../../assets/tech/vite.png";
-import github_icon from "../../assets/tech/github.png";
-import git_icon from "../../assets/tech/git.png";
 import Figma_icon from "../../assets/tech/figma.png";
 import MySQL_icon from "../../assets/tech/mysql.png";
-import postgre_icon from "../../assets/tech/postgre.png";
 import DBeaver_icon from "../../assets/tech/DBeaver.png";
 import postman from "../../assets/tech/postman.png";
+
 
 const Home = () => {
   return (
     <main>
+      <hr />
       <section id="about-content">
-        <h1 className="green">SOBRE</h1>
+        <h1>SOBRE</h1>
 
         <div id="photo-text-content">
           <div id="photo-content">
@@ -61,46 +50,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="formation-content">
-        <h1 className="porple">FORMAÇÃO</h1>
-
-        <div id="formation-cards-content">
-          <div className="formation-card"> 
-            <h2>SESI</h2>
-            <b>Conclusão: 12/2024</b>
-            <p>Ensino médio completo.</p>
-          </div>
-
-          <div className="formation-card">
-            <h2>SENAI</h2>
-            <b>Conclusão: 12/2025</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.</p>
-          </div>
-
-          <div className="formation-card">           
-            <h2>UNIP</h2>
-            <b>Conclusão: 12/2026</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Incompleto.</p>
-          </div>
-
-          <div className="formation-card">
-            <h2>HASHTAG TREINAMENTOS</h2>
-            <p>Plataforma de cursos online.</p>
-          </div>
-        </div>
-      </section>
+      <hr />
 
       <section id="certificates-content">
-        <h1 className="green">CERTIFICADOS</h1>
-        <Certificados/>
+        <h1>CERTIFICADOS</h1>
       </section>
 
-      <section id="projects-content">
-        <h1 className="porple">PROJETOS</h1>
-      </section>
+      <hr />
 
       <section id="technologies-content">
-        <h1 className="green">TECNOLOGIAS</h1>
+        <h1>TECNOLOGIAS</h1>
 
         <div id="technologies-icons-content">
           <div className="technologies-icons">
@@ -134,18 +93,13 @@ const Home = () => {
           </div>
 
           <div className="technologies-icons">
-            <img src={springboot_icon} alt="" />
-            <p>Spring Boot</p>
-          </div>
-
-          <div className="technologies-icons">
             <img src={AWS_icon} alt="" />
             <p>AWS</p>
           </div>
 
           <div className="technologies-icons">
             <img src={NodeJS_icon} alt="" />
-            <p>NodeJS</p>
+            <p>Node</p>
           </div>
 
           <div className="technologies-icons">
@@ -154,23 +108,8 @@ const Home = () => {
           </div>
 
           <div className="technologies-icons">
-            <img src={reactnative_icon} alt="" />
-            <p>React Native</p>
-          </div>
-
-          <div className="technologies-icons">
             <img src={Vite_icon} alt="" />
             <p>Vite</p>
-          </div>
-
-          <div className="technologies-icons">
-            <img src={github_icon} alt="" />
-            <p>Github</p>
-          </div>
-
-          <div className="technologies-icons">
-            <img src={git_icon} alt="" />
-            <p>Git</p>
           </div>
 
           <div className="technologies-icons">
@@ -181,11 +120,6 @@ const Home = () => {
           <div className="technologies-icons">
             <img src={MySQL_icon} alt="" />
             <p>MySQL</p>
-          </div>
-          
-          <div className="technologies-icons">
-            <img src={postgre_icon} alt="" />
-            <p>PostgreSQL</p>
           </div>
 
           <div className="technologies-icons">
