@@ -1,0 +1,29 @@
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .text-side {
+    flex: 1;
+  }
+  
+  .image-side {
+    flex: 1;
+  }
+  
+  .image-side img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsividade: Empilhar em telas pequenas */
+  @media (max-width: 768px) {
+    .slide-content {
+      flex-direction: column-reverse; /* Texto embaixo da imagem no mobile */
+      text-align: center;
+    }
+  }
