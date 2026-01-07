@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { Certificados } from "../../components/certificados/certificados"
-
 import "./home-page.css";
 
 import myPhoto from "../../assets/richard.jpg";
@@ -8,8 +6,9 @@ import myPhoto from "../../assets/richard.jpg";
 const Home = () => {
   return (
     <main>
+      <hr />
       <section id="about-content">
-        <h1 className="green">SOBRE</h1>
+        <h1>SOBRE</h1>
 
         <div id="photo-text-content">
           <div id="photo-content">
@@ -37,46 +36,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="formation-content">
-        <h1 className="porple">FORMAÇÃO</h1>
-
-        <div id="formation-cards-content">
-          <div className="formation-card"> 
-            <h2>SESI</h2>
-            <b>Conclusão: 12/2024</b>
-            <p>Ensino médio completo.</p>
-          </div>
-
-          <div className="formation-card">
-            <h2>SENAI</h2>
-            <b>Conclusão: 12/2025</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.</p>
-          </div>
-
-          <div className="formation-card">           
-            <h2>UNIP</h2>
-            <b>Conclusão: 12/2026</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Incompleto.</p>
-          </div>
-
-          <div className="formation-card">
-            <h2>HASHTAG TREINAMENTOS</h2>
-            <p>Plataforma de cursos online.</p>
-          </div>
-        </div>
-      </section>
+      <hr />
 
       <section id="certificates-content">
-        <h1 className="green">CERTIFICADOS</h1>
-        <Certificados/>
+        <h1>CERTIFICADOS</h1>
       </section>
 
-      <section id="projects-content">
-        <h1 className="porple">PROJETOS</h1>
-      </section>
+      <hr />
 
       <section id="technologies-content">
-        <h1 className="green">TECNOLOGIAS</h1>
+        <h1>TECNOLOGIAS</h1>
 
         <div id="technologies-icons-content">
           <div className="technologies-icons">

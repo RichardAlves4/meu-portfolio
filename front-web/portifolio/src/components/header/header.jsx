@@ -13,10 +13,9 @@ const Header = () => {
 
       <section id="nav-bar">
         <a href="">Sobre</a>
-        <a href="">Formação</a>
         <a href="">Certificados</a>
-        <a href="">Projetos</a>
         <a href="">Tecnologias</a>
+        <a href="">Projetos</a>
         <a href="">Contatos</a>
       </section>
 
@@ -26,7 +25,7 @@ const Header = () => {
         </div>
 
         <div>
-           <button>BR</button> 
+           <button /*onClick={language()}*/>BR</button> 
         </div>
       </section>
 
