@@ -4,7 +4,9 @@ header {
     align-items: center;
     height: 5pc;
     background-color: #b9f75d;
-    padding: 0px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 /* #cd524a vermelho */

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import './header.css';
 
 import menu_icon from "../../assets/menu.png"
+import pdf_icon from "../../assets/certificados/certificados-docs/Certificado_PROGRAMAÇÃO JAVA.pdf"
 import { ThemeSelect } from "../themeSelect/themeSelect"
 
 const Header = () => {
@@ -12,12 +13,12 @@ const Header = () => {
       </section>
 
       <section id="nav-bar">
-        <a href="">Sobre</a>
-        <a href="">Formação</a>
-        <a href="">Certificados</a>
-        <a href="">Projetos</a>
-        <a href="">Tecnologias</a>
-        <a href="">Contatos</a>
+        <a href="#about-content">Sobre</a>
+        <a href="#formation-content">Formação</a>
+        <a href="#certificates-content">Certificados</a>
+        <a href="#projects-content">Projetos</a>
+        <a href="#technologies-content">Tecnologias</a>
+        <a href="#anchors-content">Contatos</a>
       </section>
 
       <section id="items-content">

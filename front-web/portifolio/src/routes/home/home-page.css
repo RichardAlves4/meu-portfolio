@@ -1,9 +1,10 @@
-
-
 /* SOBRE */
 #about-content {
     background-color: #8d25d5;
+}
 
+#about-content h1 {
+    margin: 100px;
 }
 
 h1 {
