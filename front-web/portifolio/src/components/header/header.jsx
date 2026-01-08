@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import './header.css';
 
 import menu_icon from "../../assets/menu.png"
-import pdf_icon from "../../assets/certificados/certificados-docs/Certificado_PROGRAMAÇÃO JAVA.pdf"
 import { ThemeSelect } from "../themeSelect/themeSelect"
 
 const Header = () => {

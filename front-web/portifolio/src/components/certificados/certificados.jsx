@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
@@ -22,6 +22,7 @@ const certificados = [
     instituicao: "SENAI",
     duracao: "40 horas",
     descricao: "Fundamentos básico, ferramentas, funcionalidades e implementação de serviços da Google Cloud.",
+    arquivoUrl:"/certificados-docs/Certificado-Google-Cloud-Foundation.pdf",
     imagem: `${certificadoGoogleCloud}`,
     tipo: "pdf"
   },
@@ -31,6 +32,7 @@ const certificados = [
     instituicao: "SENAI",
     duracao: "120 horas",
     descricao: "Lógica de programação, POO, API, Spring Boot, banco de dados, Clean Architecture.",
+    arquivoUrl:"/certificados-docs/Certificado-Programacao-JAVA.pdf",
     imagem: `${certificadoJAVA}`,
     tipo: "pdf"
   },
@@ -40,6 +42,7 @@ const certificados = [
     instituicao: "SENAI",
     duracao: "60 horas",
     descricao: "Cibersegurança, Networking Fundamentals, FCA - FortiGate, Fortinet.",
+    arquivoUrl:"/certificados-docs/Certificado-Fortinet.pdf",
     imagem: `${certificadoFortinet}`,
     tipo: "pdf"
   },
@@ -49,6 +52,7 @@ const certificados = [
     instituicao: "Hashtag Treinamentos",
     duracao: "23 horas",
     descricao: "Fundamentos básico, ferramentas e funcionalidades da AWS.",
+    arquivoUrl:"https://portalhashtag.com/certificado-hashtag/1751045521525x570445423228418800",
     imagem: `${certificadoAWS}`,
     tipo: "link"
 
@@ -59,6 +63,7 @@ const certificados = [
     instituicao: "SENAI",
     duracao: "32 horas",
     descricao: "Excel básico, Power BI, ferramentas, Dashboards.",
+    arquivoUrl:"/certificados-docs/Certificado-Power-BI.pdf",
     imagem: `${certificadoPowerBI}`,
     tipo: "pdf"
   },
@@ -68,6 +73,7 @@ const certificados = [
     instituicao: "Hashtag Treinamentos",
     duracao: "170 horas",
     descricao: "Fundamentos do básico ao avançado, lógica de programação, API, ExpressJS.",
+    arquivoUrl:"https://portalhashtag.com/certificado-hashtag/1767829438099x242036252114419700",
     imagem: `${certificadoJS}`,
     tipo: "link"
   },
@@ -77,6 +83,7 @@ const certificados = [
     instituicao: "Hashtag Treinamentos",
     duracao: "19 horas",
     descricao: "fundamentos NodeJS, criação de APIs com ExpressJS.",
+    arquivoUrl:"https://portalhashtag.com/certificado-hashtag/1766535876408x767787135316000800",
     imagem: `${certificadoJSNode}`,
     tipo: "link"
   }
@@ -85,6 +92,19 @@ const certificados = [
 const Certificados = () => {
   const [modalAberto, setModalAberto] = useState(false);
   const [certSelecionado, setCertSelecionado] = useState(null);
+
+  useEffect(() => {
+    if (modalAberto) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup caso o componente seja desmontado inesperadamente
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [modalAberto]);
 
   const gerenciarClique = (cert) => {
     if (cert.tipo === 'pdf') {
@@ -110,7 +130,6 @@ const Certificados = () => {
         {certificados.map((cert) => (
           <SwiperSlide key={cert.id}>
             <div className="slide-content">
-              {/* Lado do Texto */}
               <div className="text-side">
                 <h2>{cert.titulo}</h2>
                 <p>Instituição: {cert.instituicao}</p>
@@ -121,8 +140,7 @@ const Certificados = () => {
                 </button>
               </div>
 
-              {/* Lado da Imagem */}
-              <div className="image-side" onClick={() => abrirModal(cert)} style={{cursor: 'pointer'}}>
+              <div className="image-side" onClick={() => gerenciarClique(cert)} style={{cursor: 'pointer'}}>
                 <img src={cert.imagem} alt={cert.titulo} />
               </div>
             </div>
@@ -130,18 +148,18 @@ const Certificados = () => {
         ))}
       </Swiper>
 
-      {/* RENDERIZAÇÃO CONDICIONAL DO MODAL */}
-      {modalAberto && (
-        <div className="modal-overlay" onClick={fecharModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={fecharModal}>&times;</button>
-            
-            {/* Se for link externo (ex: Alura), usamos iframe. Se for PDF local, também funciona. */}
+      {modalAberto && certSelecionado && (
+        <div className="modal-overlay animate-fade-in" onClick={() => setModalAberto(false)}>
+
+          <button className="close-button" onClick={() => setModalAberto(false)}>&times;</button>
+          
+          <div className="modal-content animate-scale-up" onClick={(e) => e.stopPropagation()}>
             <iframe 
               src={certSelecionado.arquivoUrl} 
-              title="Visualização do Certificado"
+              title={certSelecionado.titulo}
               width="100%" 
               height="100%"
+              frameBorder="0"
             />
           </div>
         </div>

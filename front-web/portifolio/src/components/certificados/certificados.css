@@ -1,3 +1,7 @@
+html, body {
+  scrollbar-gutter: stable;
+}
+
 .swiper-wrapper {
   display: flex;
   align-items: center;
@@ -48,23 +52,59 @@
 
 .modal-content {
   background: white;
-  width: 80%;
-  height: 80%;
-  position: relative;
+  width: 90%;
+  height: 85%;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.modal-content iframe {
+  flex-grow: 1;
+  border-radius: 0 0 8px 8px;
 }
 
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
-  background: none;
+  position: fixed; /* Ele fica fixo na tela */
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d; /* Vermelho para destaque, ou use a cor do seu tema */
+  color: white;
   border: none;
-  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 2000; /* Garante que fica acima de tudo */
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.close-button:hover {
+  transform: scale(1.1);
+  background: #ff0000;
+}
+
+/* Animação de entrada do fundo escuro */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Animação de "crescimento" do conteúdo do modal */
+.animate-scale-up {
+  animation: scaleUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 @media (max-width: 1030px) {
