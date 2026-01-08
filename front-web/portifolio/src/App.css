@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
+    padding: 0;
     font-family: "Quantico", sans-serif;
 }
 
@@ -17,12 +18,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-
+  background-color: #b9f75d;
   border-radius: 10px;
-  border: 2px solid #fff; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-
-    
+  border: 3px solid #8d25d5; 
 }
