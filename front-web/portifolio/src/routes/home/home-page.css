@@ -1,9 +1,10 @@
-
-
 /* SOBRE */
 #about-content {
     background-color: #8d25d5;
+}
 
+#about-content h1 {
+    margin: 100px;
 }
 
 h1 {
@@ -90,7 +91,7 @@ section {
     background-color: #8d25d5;
 }
 
-/* CERTIFICADOS */
+/* PROJETOS */
 #projects-content {
     background-color: #b9f75d;
 }

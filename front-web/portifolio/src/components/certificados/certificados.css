@@ -1,3 +1,7 @@
+html, body {
+  scrollbar-gutter: stable;
+}
+
 .swiper-wrapper {
   display: flex;
   align-items: center;
@@ -8,33 +12,105 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-  }
-  .text-side {
-    max-width: 400px;
-    word-wrap: break-word;
     
-    color: #ffffff;
-    
-  }
-  .text-side h2{
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  
-  .image-side img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-  }
+}
 
-  .swiper-button-prev, .swiper-button-next  {
-    color: #b9f75d !important;
-  }
+.text-side {
+  max-width: 400px;
+  word-wrap: break-word;
+  color: #ffffff;
+    
+}
+
+.text-side h2{
   
-  /* Responsividade: Empilhar em telas pequenas */
-  @media (max-width: 768px) {
-    .slide-content {
-      flex-direction: column-reverse; /* Texto embaixo da imagem no mobile */
-      text-align: center;
-    }
+  padding-bottom: 30px;
+}
+  
+.image-side img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.swiper-button-prev, .swiper-button-next  {
+  color: #b9f75d !important;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  height: 85%;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.modal-content iframe {
+  flex-grow: 1;
+  border-radius: 0 0 8px 8px;
+}
+
+.close-button {
+  position: fixed; /* Ele fica fixo na tela */
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d; /* Vermelho para destaque, ou use a cor do seu tema */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2000; /* Garante que fica acima de tudo */
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.close-button:hover {
+  transform: scale(1.1);
+  background: #ff0000;
+}
+
+/* Animação de entrada do fundo escuro */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Animação de "crescimento" do conteúdo do modal */
+.animate-scale-up {
+  animation: scaleUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 1030px) {
+  .slide-content {
+    flex-direction: column-reverse; /* Texto embaixo da imagem no mobile */
+    text-align: center;
+    gap: 50px;
   }
+}

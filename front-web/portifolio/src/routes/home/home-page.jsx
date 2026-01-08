@@ -68,7 +68,9 @@ const Home = () => {
 
       <section id="certificates-content">
         <h1 className="green">CERTIFICADOS</h1>
+        <div id ="carrousel-content">
         <Certificados/>
+        </div>
       </section>
 
       <section id="projects-content">
