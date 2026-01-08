@@ -19,7 +19,7 @@
 }
 
 .text-side h2{
-  text-align: center;
+  
   padding-bottom: 30px;
 }
   
@@ -37,5 +37,6 @@
   .slide-content {
     flex-direction: column-reverse; /* Texto embaixo da imagem no mobile */
     text-align: center;
+    gap: 50px;
   }
 }
