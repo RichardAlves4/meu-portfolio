@@ -125,7 +125,12 @@ const Certificados = () => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        // autoplay={{ delay: 10000 }}
+        loop={true} 
+        autoplay={{
+        delay: 5000, 
+        disableOnInteraction: false, 
+        pauseOnMouseEnter: true,
+        }}
       >
         {certificados.map((cert) => (
           <SwiperSlide key={cert.id}>
@@ -159,7 +164,6 @@ const Certificados = () => {
               title={certSelecionado.titulo}
               width="100%" 
               height="100%"
-
             />
           </div>
         </div>

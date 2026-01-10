@@ -129,6 +129,12 @@ html, body {
     right: 10px;
     padding: 8px 15px;
     font-size: 14px;
-    z-index: 9999;
+    z-index: 9999; /* Garante que fique acima de qualquer menu */
+  }
+}
+
+@media (max-width: 550px) {
+  .swiper-button-prev, .swiper-button-next  {
+    visibility: hidden;
   }
 }

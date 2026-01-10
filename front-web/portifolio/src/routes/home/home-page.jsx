@@ -75,6 +75,16 @@ const Home = () => {
 
       <section id="projects-content">
         <h1 className="porple">PROJETOS</h1>
+
+        <ul>
+          <li>
+            <img src="" alt="" />
+            <p></p>
+            <p></p>
+            <p></p>
+            <button>Ver detalhes</button>
+          </li>
+        </ul>
       </section>
 
       <section id="technologies-content">
