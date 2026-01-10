@@ -24,17 +24,17 @@ const Footer = () => {
           </a>
 
           <a href="mailto:richardalvessilva41@gmail.com" className="media-icon">
-            <img src={email} alt="" href=""></img>
+            <img src={email} alt=""></img>
             <p>E-mail</p>
           </a>
 
           <a href="https://wa.me/5511978393539" className="media-icon">
-            <img src={whatsapp} alt="" href=""></img>
+            <img src={whatsapp} alt=""></img>
             <p>Whatsapp</p>
           </a>
 
           <a href="https://www.instagram.com/r1chard.alves/" className="media-icon">
-            <img src={instagram} alt="" href=""></img>
+            <img src={instagram} alt=""></img>
             <p>Instagram</p>
           </a>
         </div>

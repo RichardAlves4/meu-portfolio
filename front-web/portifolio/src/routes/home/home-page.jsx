@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Certificados } from "../../components/certificados/certificados"
+import { Projetos } from "../../components/projetos/projetos"
 
 import "./home-page.css";
 
@@ -76,15 +77,7 @@ const Home = () => {
       <section id="projects-content">
         <h1 className="porple">PROJETOS</h1>
 
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <p></p>
-            <p></p>
-            <p></p>
-            <button>Ver detalhes</button>
-          </li>
-        </ul>
+        <Projetos/>
       </section>
 
       <section id="technologies-content">
