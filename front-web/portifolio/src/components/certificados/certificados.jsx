@@ -100,7 +100,6 @@ const Certificados = () => {
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup caso o componente seja desmontado inesperadamente
     return () => {
       document.body.style.overflow = 'unset';
     };
