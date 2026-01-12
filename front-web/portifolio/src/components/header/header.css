@@ -37,7 +37,7 @@ header {
 #items-content {
     display: flex;
     gap: 40px;
-    /* visibility: hidden; */
+    visibility: hidden;
 
 }
 
