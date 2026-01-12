@@ -100,7 +100,6 @@ const Certificados = () => {
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup caso o componente seja desmontado inesperadamente
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -140,7 +139,7 @@ const Certificados = () => {
                 <p>Instituição: {cert.instituicao}</p>
                 <p>Duração: {cert.duracao}</p>
                 <p>Descrição: {cert.descricao}</p>
-                <button onClick={() => gerenciarClique(cert)}>
+                <button className="btn-certificates btn" onClick={() => gerenciarClique(cert)}>
                   {cert.tipo === 'pdf' ? 'Visualizar Agora' : 'Ver no Site Oficial'}
                 </button>
               </div>

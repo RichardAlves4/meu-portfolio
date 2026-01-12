@@ -23,7 +23,6 @@ html, body {
 }
 
 .text-side h2{
-  
   padding-bottom: 30px;
 }
   
@@ -31,6 +30,12 @@ html, body {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
+}
+
+.btn-certificates {
+  color: black;
+  background-color: #b9f75d;
+  margin-top: 45px;
 }
 
 .swiper-button-prev, .swiper-button-next  {
@@ -43,7 +48,7 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(44, 44, 44, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +78,8 @@ html, body {
   position: fixed; /* Ele fica fixo na tela */
   top: 20px;
   right: 20px;
-  background: #ff4d4d; /* Vermelho para destaque, ou use a cor do seu tema */
-  color: white;
+  background: #b9f75d; /* Vermelho para destaque, ou use a cor do seu tema */
+  color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -87,7 +92,7 @@ html, body {
 
 .close-button:hover {
   transform: scale(1.1);
-  background: #ff0000;
+  background: #baf75dd2;
 }
 
 /* Animação de entrada do fundo escuro */

@@ -8,8 +8,8 @@ import instagram from "../../assets/footer-icons/instagram.png"
 
 const Footer = () => {
   return (
-    <footer>
-        <h1 className="porple">REDE/CONTATO</h1>
+    <footer className="container">
+        <h1 className="purple">REDE/CONTATO</h1>
 
         <section id="anchors-content">
         <div id="media-content">
@@ -24,29 +24,29 @@ const Footer = () => {
           </a>
 
           <a href="mailto:richardalvessilva41@gmail.com" className="media-icon">
-            <img src={email} alt="" href=""></img>
+            <img src={email} alt=""></img>
             <p>E-mail</p>
           </a>
 
           <a href="https://wa.me/5511978393539" className="media-icon">
-            <img src={whatsapp} alt="" href=""></img>
+            <img src={whatsapp} alt=""></img>
             <p>Whatsapp</p>
           </a>
 
           <a href="https://www.instagram.com/r1chard.alves/" className="media-icon">
-            <img src={instagram} alt="" href=""></img>
+            <img src={instagram} alt=""></img>
             <p>Instagram</p>
           </a>
         </div>
         
-        <div id="pageanchors-content">
-          <a href="">Sobre</a>
-          <a href="">Formação</a>
-          <a href="">Certificados</a>
-          <a href="">Projetos</a>
-          <a href="">Tecnologias</a>
-          <a href="">Contatos</a>
-        </div>
+        <ul id="nav-bar-footer">
+          <li><a href="#about-content" className="anchor-footer">Sobre</a></li>
+          <li><a href="#formation-content" className="anchor-footer">Formação</a></li>
+          <li><a href="#certificates-content" className="anchor-footer">Certificados</a></li>
+          <li><a href="#projects-content" className="anchor-footer">Projetos</a></li>
+          <li><a href="#technologies-content" className="anchor-footer">Tecnologias</a></li>
+          <li><a href="#anchors-content" className="anchor-footer">Contatos</a></li>
+        </ul>
       </section>
       <h4>© Copyright 2025 - Richard Alves - Todos os direitos reservados.</h4>
     </footer>

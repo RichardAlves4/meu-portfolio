@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Certificados } from "../../components/certificados/certificados"
+import { Projetos } from "../../components/projetos/projetos"
 
 import "./home-page.css";
 
@@ -38,7 +39,7 @@ const Home = () => {
       </section>
 
       <section id="formation-content">
-        <h1 className="porple">FORMAÇÃO</h1>
+        <h1 className="purple">FORMAÇÃO</h1>
 
         <div id="formation-cards-content">
           <div className="formation-card"> 
@@ -74,17 +75,8 @@ const Home = () => {
       </section>
 
       <section id="projects-content">
-        <h1 className="porple">PROJETOS</h1>
-
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <p></p>
-            <p></p>
-            <p></p>
-            <button>Ver detalhes</button>
-          </li>
-        </ul>
+        <h1 className="purple">PROJETOS</h1>
+        <Projetos/>
       </section>
 
       <section id="technologies-content">

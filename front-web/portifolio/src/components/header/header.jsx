@@ -6,7 +6,7 @@ import { ThemeSelect } from "../themeSelect/themeSelect"
 
 const Header = () => {
   return (
-    <header>
+    <header className="container">
       <section id="menu-icon-content">
         <img src={menu_icon} alt=""/>
       </section>

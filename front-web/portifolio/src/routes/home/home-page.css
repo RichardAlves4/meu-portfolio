@@ -14,8 +14,9 @@ h1 {
     margin-bottom: 30px;
 }
 
-section {
+main > section {
     padding: 30px 50px;
+    scroll-margin-top: 80px;
 }
 
 #photo-text-content {
@@ -92,7 +93,10 @@ section {
 }
 
 /* PROJETOS */
-#projects-content {
+#projects-content {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #b9f75d;
 }
 

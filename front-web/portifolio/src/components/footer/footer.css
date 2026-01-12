@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
   background-color: #b9f75d;
   justify-content: space-between;
@@ -45,20 +46,34 @@ h4 {
   color: black;
 }
 
-#pageanchors-content {
-  display: flex;
+#nav-bar-footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   margin-top: 20px;
-  text-decoration: none;
+  list-style: none;
   gap: 15px;
+  justify-items: center;
 
 }
 
-#pageanchors-content a {
+.anchor-footer {
+  display: flex;
   text-decoration: none;
-  transition: transform 0.3s;
   color: #8d25d5;
+  transition: transform 0.3s;
 }
 
-#pageanchors-content a:hover {
+.anchor-footer:hover {
     transform: scale(1.2);
+} 
+
+@media (max-width: 750px) {
+  #nav-bar-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 340px) {
+  #nav-bar-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

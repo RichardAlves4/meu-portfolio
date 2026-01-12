@@ -5,12 +5,32 @@
     font-family: "Quantico", sans-serif;
 }
 
-.porple {
+.container {
+  max-width: 2000px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.purple {
   color: #8d25d5;
 }
 
 .green {
   color: #b9f75d;
+}
+
+.btn {
+  width: fit-content;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;  
+  cursor: pointer;
+  transition: transform 0.3s;
+  
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 ::-webkit-scrollbar {
