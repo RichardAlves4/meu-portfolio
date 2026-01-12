@@ -41,30 +41,30 @@ const Home = () => {
       <section id="formation-content">
         <h1 className="purple">FORMAÇÃO</h1>
 
-        <div id="formation-cards-content">
-          <div className="formation-card"> 
+        <ul id="formation-cards-content">
+          <li className="formation-card">
             <h2>SESI</h2>
             <b>Conclusão: 12/2024</b>
             <p>Ensino médio completo.</p>
-          </div>
+          </li>
 
-          <div className="formation-card">
+          <li className="formation-card">
             <h2>SENAI</h2>
             <b>Conclusão: 12/2025</b>
             <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.</p>
-          </div>
+          </li>
 
-          <div className="formation-card">           
+          <li className="formation-card">
             <h2>UNIP</h2>
             <b>Conclusão: 12/2026</b>
             <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Incompleto.</p>
-          </div>
+          </li>
 
-          <div className="formation-card">
+          <li className="formation-card">
             <h2>HASHTAG TREINAMENTOS</h2>
             <p>Plataforma de cursos online.</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section id="certificates-content">

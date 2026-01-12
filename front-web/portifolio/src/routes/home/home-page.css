@@ -65,26 +65,21 @@ main > section {
     display: flex;
     background-color: #b9f75d;
     flex-direction: column;
-    gap: 20px;
 }
 
 #formation-cards-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     color: #1c1c1c;
+    gap: 30px;
+    justify-items: center;
 }
 
 .formation-card {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    list-style: none;
     word-wrap: break-word;
-    width: 250px;
-}
-
-.institution-img {
-    width: 250px;
-    height: 70px;
 }
 
 /* CERTIFICADOS */
@@ -145,4 +140,10 @@ main > section {
 .technologies-icons:hover p {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 630px) {
+    #formation-cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

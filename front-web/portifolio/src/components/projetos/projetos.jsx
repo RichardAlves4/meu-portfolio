@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import studentsCool from "../../assets/projetos-img/img-students-cool.png";
+import pim2 from "../../assets/projetos-img/img-pim-2.png";
 
 const arrayProjects = [
   {
@@ -26,17 +27,17 @@ const arrayProjects = [
   },
   {
     id: 2,
-    img: `${studentsCool}`,
-    titulo: "Students Cool2",
-    resumo: "Cardápio online interativo para instituições de ensino, com o objetivo de reduzir o desperdício de alimentos.",
-    introducao: "O \"Students-cool\" foi o meu TCC no curso técnico de analise e desenvolvimento de sistemas no Senai de Santo André.",
-    objetivo:"Esse projeto foi criado com o objetivo de diminuir o desperdício de alimentos em instituições de ensino, para atingir esse objetivo eu e o meu grupo criamos um cardápio interativo online (para pc e mobile), onde os responsáveis por distribuir alimentos poderiam informar o cardápio do dia, e os alunos poderiam selecionar exatamente o que iriam consumir, assim os profissionais poderiam calcular com precisão a quantidade a ser produzida, diminuindo o desperdício de comida.",
+    img: `${pim2}`,
+    titulo: "PIM 2° Semestre.",
+    resumo: "PIM é um projeto em equipe multidiciplinar da Unip para atribuir uma porcentagem na média de todas as matérias e que também é avaliado separadamente como uma matéria.",
+    introducao: "A proposta do PIM era criar uma plataforma de ensino que armazenasse dados cadastrais do usuário de forma persistente e permitisse o cadastro e login de novos usuário.",
+    objetivo:"O objetivo principal desse projeto era reduzir o desperdício de papel para , tendo em vista que a plataforma seria desenvolvida para uma instituição que fazia todo o processo gerencial da escola manualmente. Por isso eu e minha equipe resolvemos ir além do que era esperado e fizemos um sistema de gerenciamente escolar que fosse capaz de reduzir gasto de papel e trabalho manual o máximo possivel.",
     front: "Front-end: HTML, CSS, TypeScript, React, Figma;",
     back: "Back-end: Java,Spring Boot,Firebase Auth;Banco de dados: MySQL;",
     dados: "Banco de dados: MySQL;",
     observacoes: "Nesse projeto eu atuei no desenvolvimento do front-end e posso afirmar que ele foi o melhor projeto que desenvolvi enquanto estive no Senai. Durante o desenvolvimento aprendi muito sobre como trabalhar em equipe, foi também a partir desse projeto que eu criei gosto pela programação e decidi ter a área como carreira, além disso devo muito a equipe que participou comigo desse projeto, por causa deles eu tive a experiencia de trabalhar em uma equipe unida e animada o que me levou a dar o meu melhor para desenvolver esse projeto. Por esse e outros motivos sou muito grato a eles.",
     urlProjeto: "https://github.com/matheus-bicarato/StudentsCool",
-    pasta: "students-cool",
+    pasta: "pim-2",
   }
 ];
 
