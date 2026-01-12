@@ -6,14 +6,16 @@ header {
     background-color: #b9f75d;
     position: fixed;
     width: 100%;
+    padding: 0 50px;
     z-index: 99;
 }
+
 
 /* #cd524a vermelho */
 
 #menu-icon-content {
-    /* visibility: hidden; */
-    visibility: visible; 
+    display: flex;
+    visibility: hidden; 
 }
 
 #nav-bar {
@@ -35,5 +37,16 @@ header {
 #items-content {
     display: flex;
     gap: 40px;
+    /* visibility: hidden; */
 
+}
+
+@media (max-width: 750px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #menu-icon-content {
+        visibility: visible; 
+    }
 }

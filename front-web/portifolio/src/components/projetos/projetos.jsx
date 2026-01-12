@@ -7,29 +7,37 @@ import "./projetos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import studentsCool from "../../assets/projetos-img/img-students-cool.png";
+
 const arrayProjects = [
   {
     id: 1,
+    img: `${studentsCool}`,
     titulo: "Students Cool",
+    resumo: "Cardápio online interativo para instituições de ensino, com o objetivo de reduzir o desperdício de alimentos.",
     introducao: "O \"Students-cool\" foi o meu TCC no curso técnico de analise e desenvolvimento de sistemas no Senai de Santo André.",
     objetivo:"Esse projeto foi criado com o objetivo de diminuir o desperdício de alimentos em instituições de ensino, para atingir esse objetivo eu e o meu grupo criamos um cardápio interativo online (para pc e mobile), onde os responsáveis por distribuir alimentos poderiam informar o cardápio do dia, e os alunos poderiam selecionar exatamente o que iriam consumir, assim os profissionais poderiam calcular com precisão a quantidade a ser produzida, diminuindo o desperdício de comida.",
     front: "Front-end: HTML, CSS, TypeScript, React, Figma;",
     back: "Back-end: Java,Spring Boot,Firebase Auth;Banco de dados: MySQL;",
     dados: "Banco de dados: MySQL;",
     observacoes: "Nesse projeto eu atuei no desenvolvimento do front-end e posso afirmar que ele foi o melhor projeto que desenvolvi enquanto estive no Senai. Durante o desenvolvimento aprendi muito sobre como trabalhar em equipe, foi também a partir desse projeto que eu criei gosto pela programação e decidi ter a área como carreira, além disso devo muito a equipe que participou comigo desse projeto, por causa deles eu tive a experiencia de trabalhar em uma equipe unida e animada o que me levou a dar o meu melhor para desenvolver esse projeto. Por esse e outros motivos sou muito grato a eles.",
-    urlProjeto: "https://potfolio-gabrielf.vercel.app/",
+    urlProjeto: "https://github.com/matheus-bicarato/StudentsCool",
     pasta: "students-cool",
   },
   {
     id: 2,
-    introducao: "O \"Students-cool\" foi o meu TCC no curso técnico de analise e desenvolvimento de sistemas no Senai de Santo Andr",
-    objetivo:"wad",
-    tecnologias: "Cardápio online interativo...",
-    observacoes: "Aqui vai o texto longo do projeto 1...",
-    urlProjeto: "https://potfolio-gabrielf.vercel.app/",
+    img: `${studentsCool}`,
+    titulo: "Students Cool2",
+    resumo: "Cardápio online interativo para instituições de ensino, com o objetivo de reduzir o desperdício de alimentos.",
+    introducao: "O \"Students-cool\" foi o meu TCC no curso técnico de analise e desenvolvimento de sistemas no Senai de Santo André.",
+    objetivo:"Esse projeto foi criado com o objetivo de diminuir o desperdício de alimentos em instituições de ensino, para atingir esse objetivo eu e o meu grupo criamos um cardápio interativo online (para pc e mobile), onde os responsáveis por distribuir alimentos poderiam informar o cardápio do dia, e os alunos poderiam selecionar exatamente o que iriam consumir, assim os profissionais poderiam calcular com precisão a quantidade a ser produzida, diminuindo o desperdício de comida.",
+    front: "Front-end: HTML, CSS, TypeScript, React, Figma;",
+    back: "Back-end: Java,Spring Boot,Firebase Auth;Banco de dados: MySQL;",
+    dados: "Banco de dados: MySQL;",
+    observacoes: "Nesse projeto eu atuei no desenvolvimento do front-end e posso afirmar que ele foi o melhor projeto que desenvolvi enquanto estive no Senai. Durante o desenvolvimento aprendi muito sobre como trabalhar em equipe, foi também a partir desse projeto que eu criei gosto pela programação e decidi ter a área como carreira, além disso devo muito a equipe que participou comigo desse projeto, por causa deles eu tive a experiencia de trabalhar em uma equipe unida e animada o que me levou a dar o meu melhor para desenvolver esse projeto. Por esse e outros motivos sou muito grato a eles.",
+    urlProjeto: "https://github.com/matheus-bicarato/StudentsCool",
     pasta: "students-cool",
-  },
-  // ... adicione os outros aqui
+  }
 ];
 
 const todasAsImagens = import.meta.glob(
@@ -41,7 +49,6 @@ const organizarImagensPorProjeto = () => {
   const mapa = {};
 
   Object.keys(todasAsImagens).forEach((path) => {
-    // Extrai o nome da pasta (ex: 'students-cool') do caminho do arquivo
     const partes = path.split("/");
     const nomeDaPasta = partes[partes.length - 2];
 
@@ -61,6 +68,10 @@ const Modal = ({ projeto, onClose }) => {
   if (!projeto) return null;
 
   const imagensDoProjeto = mapaDeImagens[projeto.pasta] || [];
+
+  const linkButton = (projeto) => {
+      window.open(projeto.urlProjeto, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="modal-overlay-projects animate-fade-in" onClick={onClose}>
@@ -121,7 +132,9 @@ const Modal = ({ projeto, onClose }) => {
             <h3>Observações:</h3>
             <p>{projeto.observacoes}</p>
           </div>
-          <a href={projeto.urlProjeto}>Ver projeto</a> 
+          <div className="btn-modal-projects">
+            <button className="btn-projects btn" onClick={() => linkButton(projeto)}>Ver Projeto</button>          
+          </div>
         </div>
       </div>
     </div>
@@ -133,32 +146,33 @@ const Projetos = () => {
 
   useEffect(() => {
     if (projetoSelecionado) {
-      // Quando o modal abre, esconde o scroll do site
       document.body.style.overflow = 'hidden';
     } else {
-      // Quando o modal fecha, restaura o scroll
+
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup: garante que o scroll volte se o componente for desmontado
     return () => {
       document.body.style.overflow = 'unset';
     };
   }, [projetoSelecionado]);
 
   return (
-    <div className="grid-container">
-      {arrayProjects.map((proj) => (
-        <div key={proj.id} className="card">
-          <h3>{proj.titulo}</h3>
-          <p>{proj.descricao}</p>
-          <button onClick={() => setProjetoSelecionado(proj)}>
-            Ver detalhes
-          </button>
-        </div>
-      ))}
+    <div className="grid-container-projects">
+      <ul>
+        {arrayProjects.map((proj) => (
+            <li key={proj.id} className="card">
+              <img src={proj.img} alt="" />
+              <h3>{proj.titulo}</h3>
+              <p>{proj.resumo}</p>
+              
+              <button className="btn-projects btn" onClick={() => setProjetoSelecionado(proj)}>
+                Ver detalhes
+              </button>
+            </li>
+          ))}
+          </ul>
 
-      {/* Passamos o estado 'projetoSelecionado' para a prop 'projeto' */}
       <Modal
         projeto={projetoSelecionado}
         onClose={() => setProjetoSelecionado(null)}

@@ -23,7 +23,6 @@ html, body {
 }
 
 .text-side h2{
-  
   padding-bottom: 30px;
 }
   
@@ -31,6 +30,12 @@ html, body {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
+}
+
+.btn-certificates {
+  color: black;
+  background-color: #b9f75d;
+  margin-top: 45px;
 }
 
 .swiper-button-prev, .swiper-button-next  {
