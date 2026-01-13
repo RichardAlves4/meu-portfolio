@@ -18,19 +18,25 @@ header {
     visibility: hidden; 
 }
 
-#nav-bar {
+#nav-bar ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    list-style: none;
+}
+
+#nav-bar ul hr {
+    display: none;
+}
+
+.anchor-header {
     display: flex;
-    gap: 15px;
-    
-}
-
-#nav-bar a {
     text-decoration: none;
-    transition: transform 0.3s;
     color: #8d25d5;
+    transition: transform 0.3s;
 }
 
-#nav-bar a:hover {
+.anchor-header:hover {
     transform: scale(1.2);
 }
 
@@ -47,6 +53,51 @@ header {
     }
 
     #menu-icon-content {
-        visibility: visible; 
+        visibility: visible;
+        cursor: pointer;
+        z-index: 1001;
+        transition: transform 0.5s ease;
     }
+
+    #menu-icon-content.open {
+        transform: rotate(90deg);
+      }
+
+    #nav-bar {
+        position: fixed;
+        left: -100%; /* Começa fora da tela */
+        top: 0;
+        height: 100%;
+        background-color: #baf75d; /* Cor de fundo do menu */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
+        z-index: 1000;
+      }
+
+      #nav-bar ul {
+        display: grid;
+        padding: 0 30px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      #nav-bar.active {
+        left: 0; /* Desliza para dentro da tela */
+      }
+
+      #nav-bar ul hr {
+        display: flex;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        
+        }
+    
+      .anchor-header {
+        color: black;
+        font-size: 1.2rem;
+        
+      }
 }
