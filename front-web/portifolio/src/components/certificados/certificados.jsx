@@ -107,11 +107,9 @@ const Certificados = () => {
 
   const gerenciarClique = (cert) => {
     if (cert.tipo === 'pdf') {
-      // Se for PDF, abre o modal interno
       setCertSelecionado(cert);
       setModalAberto(true);
     } else {
-      // Se for link externo, abre direto em uma nova aba por segurança
       window.open(cert.arquivoUrl, '_blank', 'noopener,noreferrer');
     }
   };

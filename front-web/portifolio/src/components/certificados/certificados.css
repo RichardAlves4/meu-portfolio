@@ -75,17 +75,17 @@ html, body {
 }
 
 .close-button {
-  position: fixed; /* Ele fica fixo na tela */
+  position: fixed;
   top: 20px;
   right: 20px;
-  background: #b9f75d; /* Vermelho para destaque, ou use a cor do seu tema */
+  background: #b9f75d;
   color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 2000; /* Garante que fica acima de tudo */
+  z-index: 2000;
   font-size: 16px;
   transition: transform 0.2s;
 }
@@ -95,12 +95,10 @@ html, body {
   background: #baf75dd2;
 }
 
-/* Animação de entrada do fundo escuro */
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Animação de "crescimento" do conteúdo do modal */
 .animate-scale-up {
   animation: scaleUp 0.3s ease-out;
 }
@@ -117,7 +115,7 @@ html, body {
 
 @media (max-width: 1030px) {
   .slide-content {
-    flex-direction: column-reverse; /* Texto embaixo da imagem no mobile */
+    flex-direction: column-reverse;
     text-align: center;
     gap: 50px;
   }
@@ -134,7 +132,7 @@ html, body {
     right: 10px;
     padding: 8px 15px;
     font-size: 14px;
-    z-index: 9999; /* Garante que fique acima de qualquer menu */
+    z-index: 9999;
   }
 }
 

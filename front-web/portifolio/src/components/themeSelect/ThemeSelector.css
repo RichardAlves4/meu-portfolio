@@ -37,10 +37,10 @@
     text-align: center;
     cursor: pointer;
     display: flex;
-    flex-direction: column; /* Empilha os itens */
-    align-items: center;    /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    text-align: center;     /* Garante que o texto interno não alinhe à esquerda */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 8px;
 
 }

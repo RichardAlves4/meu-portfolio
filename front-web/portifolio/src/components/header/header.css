@@ -10,7 +10,6 @@ header {
     z-index: 99;
 }
 
-
 /* #cd524a vermelho */
 
 #menu-icon-content {
@@ -103,7 +102,7 @@ header {
       }
 
       #nav-bar.active {
-        left: 0; /* Desliza para dentro da tela */
+        left: 0;
       }
 
       #nav-bar ul hr {
@@ -130,15 +129,15 @@ header {
 @media (max-height: 600px) {
   #nav-bar {
         position: fixed;
-        left: -100%; /* Começa fora da tela */
+        left: -100%; 
         top: 0;
         height: 100%;
-        background-color: #baf75d; /* Cor de fundo do menu */
+        background-color: #baf75d;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: end;
-        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
+        transition: left 0.5s ease-in-out;
         z-index: 1000;
         gap: 20px;
       }

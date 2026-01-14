@@ -13,12 +13,10 @@ const ThemeSelect = () => {
 
   return (
     <div className="theme-container">
-      {/* O "Botão" que mostra o tema atual */}
       <div className="selected-box" onClick={() => setIsOpen(!isOpen)}>
         <img src={selectedTheme.img} key='default' />
       </div>
 
-      {/* A lista de opções que abre e fecha */}
       {isOpen && (
         <div className="options-grid">
           {themes.map((theme) => (
@@ -28,7 +26,6 @@ const ThemeSelect = () => {
               onClick={() => {
                 setSelectedTheme(theme);
                 setIsOpen(false);
-                // Aqui você dispararia a lógica para mudar o tema do site
               }}
             >
               <img src={theme.img} alt={theme.name} />
