@@ -33,6 +33,7 @@ header {
     display: flex;
     text-decoration: none;
     color: #8d25d5;
+    font-size: 1.2rem;
     transition: transform 0.3s;
 }
 
@@ -40,22 +41,40 @@ header {
     transform: scale(1.2);
 }
 
-#items-content {
+#logo-navbar-header {
+  display: none;
+}
+
+.logo-header {
+  width: 100%;
+  max-width: 60px;
+}
+
+/* #items-content {
     display: flex;
     gap: 40px;
     visibility: hidden;
 
-}
+} */
 
 @media (max-width: 750px) {
+    header {
+      justify-content: end;
+    }
     #nav-bar {
         display: none;
+    }
+
+    #logo-content {
+      display: none;
     }
 
     #menu-icon-content {
         visibility: visible;
         cursor: pointer;
         z-index: 1001;
+        display: flex;
+        
         transition: transform 0.5s ease;
     }
 
@@ -65,15 +84,17 @@ header {
 
     #nav-bar {
         position: fixed;
-        left: -100%; /* Começa fora da tela */
+        right: -100%; /* Começa fora da tela */
         top: 0;
         height: 100%;
         background-color: #baf75d; /* Cor de fundo do menu */
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
+        transition: right 0.5s ease-in-out; /* Efeito suave ao abrir */
         z-index: 1000;
+        gap: 50px;
       }
 
       #nav-bar ul {
@@ -81,10 +102,11 @@ header {
         padding: 0 30px;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
       }
 
       #nav-bar.active {
-        left: 0; /* Desliza para dentro da tela */
+        right: 0; /* Desliza para dentro da tela */
       }
 
       #nav-bar ul hr {
@@ -99,5 +121,10 @@ header {
         color: black;
         font-size: 1.2rem;
         
+      }
+
+      #logo-navbar-header {
+        display: flex;
+        max-width: 100px;
       }
 }

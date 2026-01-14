@@ -61,6 +61,7 @@ h4 {
   text-decoration: none;
   color: #8d25d5;
   transition: transform 0.3s;
+  font-size: 1.2rem;
 }
 
 .anchor-footer:hover {
