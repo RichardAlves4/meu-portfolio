@@ -5,6 +5,7 @@ import "./header.css";
 import { ThemeSelect } from "../themeSelect/themeSelect";
 
 import menu_icon from "../../assets/menu.png";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,11 +16,9 @@ const Header = () => {
 
   return (
     <header className="container">
-      <section id="menu-icon-content" 
-      onClick={toggleMenu} 
-      className={menuOpen ? "open" : ""}
-      >
-        <img src={menu_icon} alt="Menu" />
+
+      <section id="logo-content">
+          <img src={logo} alt="" className="logo-header"/>
       </section>
 
       <section id="nav-bar" className={menuOpen ? "active" : ""}>
@@ -94,9 +93,18 @@ const Header = () => {
             </a>
           </li>
         </ul>
+
+        <img src={logo} alt="" id="logo-navbar-header" className="logo-header"/>
       </section>
 
-      <section id="items-content">
+      <section id="menu-icon-content" 
+      onClick={toggleMenu} 
+      className={menuOpen ? "open" : ""}
+      >
+        <img src={menu_icon} alt="Menu" />
+      </section>
+
+      {/* <section id="items-content">
         <div>
           <ThemeSelect />
         </div>
@@ -104,7 +112,7 @@ const Header = () => {
         <div>
           <button>BR</button>
         </div>
-      </section>
+      </section> */}
     </header>
   );
 };

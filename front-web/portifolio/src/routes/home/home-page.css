@@ -32,7 +32,7 @@ main > section {
 
 #my-photo {
     width: 300px;
-    border: 5px solid #b9f75d;
+    border: 2px solid #b9f75d;
     border-radius: 10px;
 }
 
@@ -40,6 +40,7 @@ main > section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 
 }
 
