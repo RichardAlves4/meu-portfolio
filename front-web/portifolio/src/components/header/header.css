@@ -58,9 +58,7 @@ header {
 } */
 
 @media (max-width: 750px) {
-    header {
-      justify-content: end;
-    }
+    
     #nav-bar {
         display: none;
     }
@@ -84,7 +82,7 @@ header {
 
     #nav-bar {
         position: fixed;
-        right: -100%; /* Começa fora da tela */
+        left: -100%; /* Começa fora da tela */
         top: 0;
         height: 100%;
         background-color: #baf75d; /* Cor de fundo do menu */
@@ -92,7 +90,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: right 0.5s ease-in-out; /* Efeito suave ao abrir */
+        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
         z-index: 1000;
         gap: 50px;
       }
@@ -106,7 +104,7 @@ header {
       }
 
       #nav-bar.active {
-        right: 0; /* Desliza para dentro da tela */
+        left: 0; /* Desliza para dentro da tela */
       }
 
       #nav-bar ul hr {
