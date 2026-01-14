@@ -72,7 +72,6 @@ header {
         cursor: pointer;
         z-index: 1001;
         display: flex;
-        
         transition: transform 0.5s ease;
     }
 
@@ -89,7 +88,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
         z-index: 1000;
         gap: 50px;
@@ -124,5 +123,37 @@ header {
       #logo-navbar-header {
         display: flex;
         max-width: 100px;
+        margin-bottom: 20px;
+      }
+}
+
+@media (max-height: 600px) {
+  #nav-bar {
+        position: fixed;
+        left: -100%; /* Começa fora da tela */
+        top: 0;
+        height: 100%;
+        background-color: #baf75d; /* Cor de fundo do menu */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
+        z-index: 1000;
+        gap: 20px;
+      }
+
+      #nav-bar ul {
+        display: grid;
+        padding: 0 30px;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+      }
+
+      .anchor-header {
+        color: black;
+        font-size: 1.0rem;
+        
       }
 }
