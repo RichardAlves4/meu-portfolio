@@ -1,4 +1,5 @@
-import "./footer.css";
+import React from 'react';
+import styles from "./footer.module.css";
 
 import linkedin from "../../assets/footer-icons/linkedin.png"
 import github from "../../assets/footer-icons/github.png"
@@ -8,47 +9,47 @@ import instagram from "../../assets/footer-icons/instagram.png"
 
 const Footer = () => {
   return (
-    <footer className="container">
+    <footer>
         <h1 className="purple">REDE/CONTATO</h1>
 
-        <section id="anchors-content">
-        <div id="media-content">
-          <a href="https://www.linkedin.com/in/richardalves4/" className="media-icon">
+        <section className={styles.anchorsContainer}>
+        <div className={styles.anchorsMedia}>
+          <a href="https://www.linkedin.com/in/richardalves4/" className={styles.icon}>
               <img src={linkedin} alt=""></img>
             <p>Linkedin</p>
           </a>
 
-          <a href="https://github.com/RichardAlves4" className="media-icon">
+          <a href="https://github.com/RichardAlves4" className={styles.icon}>
             <img src={github} alt="" ></img>
             <p>GitHub</p>
           </a>
 
-          <a href="mailto:richardalvessilva41@gmail.com" className="media-icon">
+          <a href="mailto:richardalvessilva41@gmail.com" className={styles.icon}>
             <img src={email} alt=""></img>
             <p>E-mail</p>
           </a>
 
-          <a href="https://wa.me/5511978393539" className="media-icon">
+          <a href="https://wa.me/5511978393539" className={styles.icon}>
             <img src={whatsapp} alt=""></img>
             <p>Whatsapp</p>
           </a>
 
-          <a href="https://www.instagram.com/r1chard.alves/" className="media-icon">
+          <a href="https://www.instagram.com/r1chard.alves/" className={styles.icon}>
             <img src={instagram} alt=""></img>
             <p>Instagram</p>
           </a>
         </div>
         
-        <ul id="nav-bar-footer">
-          <li><a href="#about-content" className="anchor-footer">Sobre</a></li>
-          <li><a href="#formation-content" className="anchor-footer">Formação</a></li>
-          <li><a href="#certificates-content" className="anchor-footer">Certificados</a></li>
-          <li><a href="#projects-content" className="anchor-footer">Projetos</a></li>
-          <li><a href="#technologies-content" className="anchor-footer">Tecnologias</a></li>
-          <li><a href="#anchors-content" className="anchor-footer">Contatos</a></li>
+        <ul className={styles.navBar}>
+          <li><a href="#about-content" className={styles.anchor}>Sobre</a></li>
+          <li><a href="#formation-content" className={styles.anchor}>Formação</a></li>
+          <li><a href="#certificates-content" className={styles.anchor}>Certificados</a></li>
+          <li><a href="#projects-content" className={styles.anchor}>Projetos</a></li>
+          <li><a href="#technologies-content" className={styles.anchor}>Tecnologias</a></li>
+          <li><a href="#anchors-content" className={styles.anchor}>Contatos</a></li>
         </ul>
       </section>
-      <h4>© Copyright 2025 - Richard Alves - Todos os direitos reservados.</h4>
+      <h4>&copy; Copyright 2025 - Richard Alves - Todos os direitos reservados.</h4>
     </footer>
   )
 }
