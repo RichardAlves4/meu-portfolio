@@ -20,7 +20,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-main > section {
+.home > section {
     padding: 30px 50px;
     scroll-margin-top: 80px;
 }
