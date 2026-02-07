@@ -8,7 +8,7 @@ import myPhoto from "../../assets/richard.jpg";
 
 const Home = () => {
   return (
-    <main>
+    < div className='home'>
       <section id="about-content">
         <h1 className="green">SOBRE</h1>
 
@@ -177,7 +177,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   ) 
 }
 

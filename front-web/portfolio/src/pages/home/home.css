@@ -1,4 +1,10 @@
 /* SOBRE */
+.home {
+    display: flex;
+    flex-direction: column !important; 
+    width: 100%;
+}
+
 #about-content {
     background-color: #8d25d5;
 }

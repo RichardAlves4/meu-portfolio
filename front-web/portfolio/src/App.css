@@ -2,13 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Quantico", sans-serif;
 }
 
-.container {
-  max-width: 2000px;
-  width: 100%;
-  box-sizing: border-box;
+main {
+  width: 100vw;
+  height: 100vw;
 }
 
 .purple {
