@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import { Certificados } from "../../components/certificados/certificados"
 import { Projetos } from "../../components/projetos/projetos"
 
-import "./home-page.css";
+import "./home.css";
 
 import myPhoto from "../../assets/richard.jpg";
 
