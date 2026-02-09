@@ -5,11 +5,11 @@
     width: 100%;
 }
 
-#about-content {
+.aboutContainer {
     background-color: #8d25d5;
 }
 
-#about-content h1 {
+.aboutContainer h1 {
     margin-top: 100px;
 }
 
@@ -25,18 +25,18 @@ h1 {
     scroll-margin-top: 80px;
 }
 
-#photo-text-content {
+.imgTextContainer {
     display: flex;
     justify-content: center;
     gap: 10%;
     flex-wrap: wrap;
 }
 
-#photo-text-content h2{
+.imgTextContainer h2{
     color: #fff;
 }
 
-#my-photo {
+.imgAbout {
     width: 300px;
     border: 2px solid #b9f75d;
     border-radius: 10px;
@@ -50,31 +50,31 @@ h1 {
 
 }
 
-#text-about-content h2 {
+.textAboutContainer h2 {
     display: flex;
     justify-content: center;
 }
 
-#about-text {
+.paragraphAboutContainer {
     max-width: 500px;
     word-wrap: break-word;
     text-align: justify;
     color: #fff;
 }
 
-.about-keyWord {
+.keyWordAboutContent {
     color: #b9f75d;
     font-weight: bold;
 }
 
 /* FORMAÇÃO */
-#formation-content {
+.formationContainer {
     display: flex;
     background-color: #b9f75d;
     flex-direction: column;
 }
 
-#formation-cards-content {
+.cardsFormationContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #1c1c1c;
@@ -82,7 +82,7 @@ h1 {
     justify-items: center;
 }
 
-.formation-card {
+.cardFormationContent {
     width: 100%;
     max-width: 250px;
     list-style: none;
@@ -90,12 +90,12 @@ h1 {
 }
 
 /* CERTIFICADOS */
-#certificates-content {
+.certificatesContent {
     background-color: #8d25d5;
 }
 
 /* PROJETOS */
-#projects-content {  
+.projectsContainer {  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@ h1 {
 }
 
 /* TECNOLOGIAS */
-#technologies-content {
+.technologiesContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +111,7 @@ h1 {
     gap: 30px;
 }
 
-#technologies-icons-content {
+.iconsTechnologiesContainer {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -119,24 +119,24 @@ h1 {
     gap: 20px;
 }
 
-.technologies-icons {
+.iconsTechnologiesContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
 }
 
-.technologies-icons svg {
+.iconsTechnologiesContent svg {
     fill: #fff;
     width: 64px;
     height: 64px;
 }
 
-.technologies-icons:hover {
+.iconsTechnologiesContent:hover {
     transform: scale(1.1);
 }
 
-.technologies-icons p {
+.iconsTechnologiesContent p {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
@@ -144,13 +144,13 @@ h1 {
     
 }
   
-.technologies-icons:hover p {
+.iconsTechnologiesContent:hover p {
     opacity: 1;
     visibility: visible;
 }
 
 @media (max-width: 630px) {
-    #formation-cards-content {
+    .cardsFormationContainer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
