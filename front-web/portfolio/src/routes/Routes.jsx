@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRoutes } from 'react-router'
 import { Layout } from '../pages/Layout'
-import { Home } from '../pages/home/Home'
+import { Home } from '../pages/home/Home_temp'
 import { NotFound } from '../pages/notFound/NotFound'
 
 export function Routes() {
