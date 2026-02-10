@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './ThemeSelector.css';
+import './themeSelector.css';
 
 const themes = [
   { id: 'default', name: 'Padrão', img: '../../src/assets/default-mode.png' },
