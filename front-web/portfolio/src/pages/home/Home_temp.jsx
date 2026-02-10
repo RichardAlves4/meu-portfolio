@@ -1,6 +1,6 @@
 import React from "react";
 import { Certificados } from "../../components/certificados/Certificados_temp"
-import { Projetos } from "../../components/projetos/Projetos_temprojetos"
+import { Projetos } from "../../components/projetos/Projetos_temp"
 
 import styles from "./home.module.css";
 
