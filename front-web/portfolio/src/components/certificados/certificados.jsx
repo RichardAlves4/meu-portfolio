@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 import "./certificados.css";
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -89,7 +88,7 @@ const certificados = [
   }
 ];
 
-const Certificados = () => {
+export const Certificados = () => {
   const [modalAberto, setModalAberto] = useState(false);
   const [certSelecionado, setCertSelecionado] = useState(null);
 
@@ -115,7 +114,7 @@ const Certificados = () => {
   };
 
   return (
-    <div className="container-carrossel">
+    <>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
@@ -165,7 +164,6 @@ const Certificados = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
-export {Certificados};

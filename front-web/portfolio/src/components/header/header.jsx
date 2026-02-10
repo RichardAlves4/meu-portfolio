@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./header.css";
+import styles from  "./header.module.css"; 
 
 import { ThemeSelect } from "../themeSelect/themeSelect";
 
@@ -15,18 +14,17 @@ const Header = () => {
   };
 
   return (
-    <header className="container">
-
-      <section id="logo-content">
-          <img src={logo} alt="" className="logo-header"/>
+    <header>
+      <section className={styles.logoContainer}>
+          <img src={logo} alt="" className={styles.logo}/>
       </section>
 
-      <section id="nav-bar" className={menuOpen ? "active" : ""}>
+      <section className={`${styles.navBar} ${menuOpen ? styles.active : ""}`}>
         <ul>
           <li>
             <a
               href="#about-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Sobre
@@ -38,7 +36,7 @@ const Header = () => {
           <li>
             <a
               href="#formation-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Formação
@@ -50,7 +48,7 @@ const Header = () => {
           <li>
             <a
               href="#certificates-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Certificados
@@ -62,7 +60,7 @@ const Header = () => {
           <li>
             <a
               href="#projects-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Projetos
@@ -74,7 +72,7 @@ const Header = () => {
           <li>
             <a
               href="#technologies-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Tecnologias
@@ -86,7 +84,7 @@ const Header = () => {
           <li>
             <a
               href="#anchors-content"
-              className="anchor-header"
+              className={styles.anchor}
               onClick={toggleMenu}
             >
               Contatos
@@ -94,12 +92,12 @@ const Header = () => {
           </li>
         </ul>
 
-        <img src={logo} alt="" id="logo-navbar-header" className="logo-header"/>
+        <img src={logo} alt="" className={styles.logo && styles.logoNavbar}/>
       </section>
 
       <section id="menu-icon-content" 
       onClick={toggleMenu} 
-      className={menuOpen ? "open" : ""}
+      className={`${styles.menuHidden}  ${menuOpen ?  styles.open : ""}`}
       >
         <img src={menu_icon} alt="Menu" />
       </section>
