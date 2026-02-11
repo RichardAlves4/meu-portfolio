@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import "./projetos.css";
+// import "./projetos.css";
+import styles from  "./projetos.module.css";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -75,9 +76,9 @@ const Modal = ({ projeto, onClose }) => {
   };
 
   return (
-    <div className="modal-overlay-projects animate-fade-in" onClick={onClose}>
-      <button className="close-button" onClick={onClose}>X</button>
-      <div className="modal-content-project animate-scale-up" onClick={(e) => e.stopPropagation()}>
+    <div className={`${styles.modalContainer} ${styles.animateFadeIn}`} onClick={onClose}>
+      <button className={styles.btnCloseModal} onClick={onClose}>X</button>
+      <div className={`${styles.modalContent} ${styles.animateScaleUp}`} onClick={(e) => e.stopPropagation()}>
         <div className="swiper-container-projects">
           {imagensDoProjeto.length > 0 ? (
             <Swiper
@@ -95,7 +96,7 @@ const Modal = ({ projeto, onClose }) => {
             >
               {imagensDoProjeto.map((url, index) => (
                 <SwiperSlide key={index}>
-                  <div className="image-slide-projetcs">
+                  <div className={styles.imgSlide}>
                     <img
                       src={url}
                       alt={`Slide ${index}`}
@@ -110,7 +111,7 @@ const Modal = ({ projeto, onClose }) => {
           )}
         </div>
 
-        <div id="text-content-project">
+        <div className={styles.textModalContent}>
           <h2>{projeto.titulo}</h2>
           <div>
             <h3>Introdução:</h3>
@@ -133,8 +134,8 @@ const Modal = ({ projeto, onClose }) => {
             <h3>Observações:</h3>
             <p>{projeto.observacoes}</p>
           </div>
-          <div className="btn-modal-projects">
-            <button className="btn-projects btn" onClick={() => linkButton(projeto)}>Ver Projeto</button>          
+          <div className={styles.btnModalLink}>
+            <button className={`${styles.btnProject} btn`} onClick={() => linkButton(projeto)}>Ver Projeto</button>          
           </div>
         </div>
       </div>
@@ -159,15 +160,15 @@ const Projetos = () => {
   }, [projetoSelecionado]);
 
   return (
-    <div className="grid-container-projects">
+    <div className={styles.projectsContainer}>
       <ul>
         {arrayProjects.map((proj) => (
-            <li key={proj.id} className="card">
+            <li key={proj.id} className={styles.projectContent}>
               <img src={proj.img} alt="" />
               <h3>{proj.titulo}</h3>
               <p>{proj.resumo}</p>
               
-              <button className="btn-projects btn" onClick={() => setProjetoSelecionado(proj)}>
+              <button className={`${styles.btnProject} btn`} onClick={() => setProjetoSelecionado(proj)}>
                 Ver detalhes
               </button>
             </li>
