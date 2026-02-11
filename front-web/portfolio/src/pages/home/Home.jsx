@@ -1,6 +1,6 @@
 import React from "react";
-import { Certificados } from "../../components/certificados/Certificados_temp"
-import { Projetos } from "../../components/projetos/Projetos_temp"
+import { Certificados } from "../../components/certificados/Certificados"
+import { Projetos } from "../../components/projetos/Projetos"
 
 import styles from "./home.module.css";
 
@@ -9,7 +9,7 @@ import myPhoto from "../../assets/richard.jpg";
 const Home = () => {
   return (
     <div className={styles.home}>
-      <section className={styles.aboutContainer}>
+      <section className={`${styles.aboutContainer}`} id='about'>
         <h1 className="green">SOBRE</h1>
 
         <div className={styles.imgTextContainer}>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={styles.formationContainer}>
+      <section className={styles.formationContainer} id='formation'>
         <h1 className="purple">FORMAÇÃO</h1>
 
         <ul className={styles.cardsFormationContainer}>
@@ -67,17 +67,17 @@ const Home = () => {
         </ul>
       </section>
 
-      <section className={styles.certificatesContent}>
+      <section className={styles.certificatesContent} id='certificates'>
         <h1 className="green">CERTIFICADOS</h1>
         <Certificados/>
       </section>
 
-      <section className={styles.projectsContainer}>
+      <section className={styles.projectsContainer} id='projects'>
         <h1 className="purple">PROJETOS</h1>
         <Projetos/>
       </section>
 
-      <section className={styles.technologiesContainer}>
+      <section className={styles.technologiesContainer} id='technologies'>
         <h1 className="green">TECNOLOGIAS</h1>
 
         <div className={styles.iconsTechnologiesContainer}>

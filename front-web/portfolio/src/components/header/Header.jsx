@@ -23,7 +23,7 @@ const Header = () => {
         <ul>
           <li>
             <a
-              href="#about-content"
+              href="#about"
               className={styles.anchor}
               onClick={toggleMenu}
             >
@@ -35,7 +35,7 @@ const Header = () => {
 
           <li>
             <a
-              href="#formation-content"
+              href="#formation"
               className={styles.anchor}
               onClick={toggleMenu}
             >
@@ -47,7 +47,7 @@ const Header = () => {
 
           <li>
             <a
-              href="#certificates-content"
+              href="#certificates"
               className={styles.anchor}
               onClick={toggleMenu}
             >
@@ -59,7 +59,7 @@ const Header = () => {
 
           <li>
             <a
-              href="#projects-content"
+              href="#projects"
               className={styles.anchor}
               onClick={toggleMenu}
             >
@@ -71,7 +71,7 @@ const Header = () => {
 
           <li>
             <a
-              href="#technologies-content"
+              href="#technologies"
               className={styles.anchor}
               onClick={toggleMenu}
             >
@@ -83,7 +83,7 @@ const Header = () => {
 
           <li>
             <a
-              href="#anchors-content"
+              href="#contacts"
               className={styles.anchor}
               onClick={toggleMenu}
             >
