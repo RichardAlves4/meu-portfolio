@@ -9,7 +9,7 @@ import instagram from "../../assets/footer-icons/instagram.png"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id='contacts'>
         <h1 className="purple">REDE/CONTATO</h1>
 
         <section className={styles.anchorsContainer}>
@@ -41,12 +41,12 @@ const Footer = () => {
         </div>
         
         <ul className={styles.navBar}>
-          <li><a href="#about-content" className={styles.anchor}>Sobre</a></li>
-          <li><a href="#formation-content" className={styles.anchor}>Formação</a></li>
-          <li><a href="#certificates-content" className={styles.anchor}>Certificados</a></li>
-          <li><a href="#projects-content" className={styles.anchor}>Projetos</a></li>
-          <li><a href="#technologies-content" className={styles.anchor}>Tecnologias</a></li>
-          <li><a href="#anchors-content" className={styles.anchor}>Contatos</a></li>
+          <li><a href="#about" className={styles.anchor}>Sobre</a></li>
+          <li><a href="#formation" className={styles.anchor}>Formação</a></li>
+          <li><a href="#certificates" className={styles.anchor}>Certificados</a></li>
+          <li><a href="#projects" className={styles.anchor}>Projetos</a></li>
+          <li><a href="#technologies" className={styles.anchor}>Tecnologias</a></li>
+          <li><a href="#contacts" className={styles.anchor}>Contatos</a></li>
         </ul>
       </section>
       <h4>&copy; Copyright 2025 - Richard Alves - Todos os direitos reservados.</h4>
