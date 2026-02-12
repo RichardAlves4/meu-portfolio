@@ -7,7 +7,7 @@ import styles from  "./projetos.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import arrayProjects from "./projetos"
+import arrayProjects from "./projetosDB"
 
 const todasAsImagens = import.meta.glob(
   "../../assets/projetos-img/**/*.{png,jpg,jpeg,webp}",
