@@ -6,7 +6,7 @@ import "./certificados.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import certificados from "./certificados"
+import certificados from "./certificadosDB"
 
 export const Certificados = () => {
   const [modalAberto, setModalAberto] = useState(false);
