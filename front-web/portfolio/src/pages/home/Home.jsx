@@ -1,4 +1,6 @@
 import React from "react";
+
+import {Formacao} from "../../components/formacao/Formacao"
 import { Certificados } from "../../components/certificados/Certificados"
 import { Projetos } from "../../components/projetos/Projetos"
 
@@ -36,7 +38,7 @@ const Home = () => {
               Atualmente estou para dar inicio ao meu terceiro semestre e estou 
               buscando um estágio para conseguir experiência e aprender como lidar com 
               situações reais do coditiano de um programador nas empresas. Atualmente 
-              meu <span className={styles.keyWordAboutContent}>objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
+              meus <span className={styles.keyWordAboutContent}>objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
           </div>
         </div>
       </section>
@@ -44,30 +46,9 @@ const Home = () => {
       <section className={styles.formationContainer} id='formation'>
         <h1 className="purple">FORMAÇÃO</h1>
 
-        <ul className={styles.cardsFormationContainer}>
-          <li className={styles.cardFormationContent}>
-            <h2>SESI</h2>
-            <b>Conclusão: 12/2024</b>
-            <p>Ensino médio completo.</p>
-          </li>
-
-          <li className={styles.cardFormationContent}>
-            <h2>SENAI</h2>
-            <b>Conclusão: 12/2025</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.</p>
-          </li>
-
-          <li className={styles.cardFormationContent}>
-            <h2>UNIP</h2>
-            <b>Conclusão: 12/2026</b>
-            <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Incompleto.</p>
-          </li>
-
-          <li className={styles.cardFormationContent}>
-            <h2>HASHTAG TREINAMENTOS</h2>
-            <p>Plataforma de cursos online.</p>
-          </li>
-        </ul>
+        <div className={styles.cardsFormationContainer}>
+          <Formacao/>
+        </div>
       </section>
 
       <section className={styles.certificatesContent} id='certificates'>

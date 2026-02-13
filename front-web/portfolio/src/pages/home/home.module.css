@@ -72,21 +72,14 @@ h1 {
     display: flex;
     background-color: #b9f75d;
     flex-direction: column;
+    align-items: center;
 }
 
 .cardsFormationContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #1c1c1c;
-    gap: 30px;
-    justify-items: center;
-}
-
-.cardFormationContent {
-    width: 100%;
-    max-width: 250px;
-    list-style: none;
-    word-wrap: break-word;
+    gap: 60px;
 }
 
 /* CERTIFICADOS */
