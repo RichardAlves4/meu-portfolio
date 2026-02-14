@@ -1,16 +1,13 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 5pc;
-    background-color: #b9f75d;
     position: fixed;
     width: 100%;
     padding: 0 50px;
     z-index: 99;
 }
-
-/* #cd524a vermelho */
 
 .menuHidden {
     display: flex;
@@ -31,7 +28,6 @@ header {
 .anchor {
     display: flex;
     text-decoration: none;
-    color: #8d25d5;
     font-size: 1.2rem;
     transition: transform 0.3s;
 }
@@ -49,12 +45,12 @@ header {
   max-width: 60px;
 }
 
-/* #items-content {
+.itensContainer {
     display: flex;
     gap: 40px;
-    visibility: hidden;
+    
 
-} */
+}
 
 @media (max-width: 750px) {
     

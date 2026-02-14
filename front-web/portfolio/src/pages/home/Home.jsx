@@ -11,7 +11,7 @@ import myPhoto from "../../assets/richard.jpg";
 const Home = () => {
   return (
     <div className={styles.home}>
-      <section className={`${styles.aboutContainer}`} id='about'>
+      <section className={`${styles.aboutContainer} test`} id='about'>
         <h1 className="green">SOBRE</h1>
 
         <div className={styles.imgTextContainer}>

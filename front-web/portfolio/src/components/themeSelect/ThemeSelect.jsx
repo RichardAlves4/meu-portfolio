@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import { useTheme } from '../../context/ThemeContext';
 import './themeSelector.css';
 
 const themes = [
-  { id: 'default', name: 'Padrão', img: '../../src/assets/default-mode.png' },
-  { id: 'dark', name: 'Dark mode', img: '../../src/assets/dark-mode.png' },
+  { id: 'punk', name: 'Padrão', img: '../../src/assets/default-mode.png' },
   { id: 'red', name: 'Red Mode', img: '../../src/assets/red-mode.png' },
+  { id: 'dark', name: 'Dark mode', img: '../../src/assets/dark-mode.png' },
 ];
 
 const ThemeSelect = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState(themes[0]);
+  const {setTheme} = useTheme();
 
   return (
     <div className="theme-container">
@@ -21,11 +23,12 @@ const ThemeSelect = () => {
         <div className="options-grid">
           {themes.map((theme) => (
             <div 
-              key={theme.id} 
+              key={theme.id}
               className="option-item"
               onClick={() => {
                 setSelectedTheme(theme);
                 setIsOpen(false);
+                setTheme(theme.id);
               }}
             >
               <img src={theme.img} alt={theme.name} />

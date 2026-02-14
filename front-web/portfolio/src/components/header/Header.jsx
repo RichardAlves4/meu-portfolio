@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from  "./header.module.css"; 
-
-// import { ThemeSelect } from "../themeSelect/ThemeSelect_temp";
+import { ThemeSelect } from "../themeSelect/ThemeSelect";
 
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -14,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className='containerTheme'>
       <section className={styles.logoContainer}>
           <img src={logo} alt="" className={styles.logo}/>
       </section>
@@ -24,7 +23,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Sobre
@@ -36,7 +35,7 @@ const Header = () => {
           <li>
             <a
               href="#formation"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Formação
@@ -48,7 +47,7 @@ const Header = () => {
           <li>
             <a
               href="#certificates"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Certificados
@@ -60,7 +59,7 @@ const Header = () => {
           <li>
             <a
               href="#projects"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Projetos
@@ -72,7 +71,7 @@ const Header = () => {
           <li>
             <a
               href="#technologies"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Tecnologias
@@ -84,7 +83,7 @@ const Header = () => {
           <li>
             <a
               href="#contacts"
-              className={styles.anchor}
+              className={`${styles.anchor} anchorTheme`}
               onClick={toggleMenu}
             >
               Contatos
@@ -102,7 +101,7 @@ const Header = () => {
         <img src={menu_icon} alt="Menu" />
       </section>
 
-      {/* <section id="items-content">
+      <section className={styles.itensContainer}>
         <div>
           <ThemeSelect />
         </div>
@@ -110,7 +109,7 @@ const Header = () => {
         <div>
           <button>BR</button>
         </div>
-      </section> */}
+      </section>
     </header>
   );
 };

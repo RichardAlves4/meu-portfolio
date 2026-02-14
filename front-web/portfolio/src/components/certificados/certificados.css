@@ -17,9 +17,7 @@ html, body {
 
 .text-side {
   max-width: 400px;
-  word-wrap: break-word;
-  color: #ffffff;
-    
+  word-wrap: break-word;    
 }
 
 .text-side h2{
@@ -33,13 +31,7 @@ html, body {
 }
 
 .btn-certificates {
-  color: black;
-  background-color: #b9f75d;
   margin-top: 45px;
-}
-
-.swiper-button-prev, .swiper-button-next  {
-  color: #b9f75d !important;
 }
 
 .modal-overlay {
@@ -92,7 +84,6 @@ html, body {
 
 .close-button:hover {
   transform: scale(1.1);
-  background: #baf75dd2;
 }
 
 .animate-fade-in {
