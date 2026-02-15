@@ -51,12 +51,12 @@ export const Certificados = () => {
         {certificados.map((cert) => (
           <SwiperSlide key={cert.id}>
             <div className="slide-content">
-              <div className="text-side">
+              <div className="text-side secondaryTextTheme">
                 <h2>{cert.titulo}</h2>
                 <p>Instituição: {cert.instituicao}</p>
                 <p>Duração: {cert.duracao}</p>
                 <p>Descrição: {cert.descricao}</p>
-                <button className="btn-certificates btn" onClick={() => gerenciarClique(cert)}>
+                <button className="btn-certificates btn btnTheme" onClick={() => gerenciarClique(cert)}>
                   {cert.tipo === 'pdf' ? 'Visualizar Agora' : 'Ver no Site Oficial'}
                 </button>
               </div>
@@ -72,7 +72,7 @@ export const Certificados = () => {
       {modalAberto && certSelecionado && (
         <div className="modal-overlay animate-fade-in" onClick={() => setModalAberto(false)}>
 
-          <button className="close-button" onClick={() => setModalAberto(false)}>&times;</button>
+          <button className="close-button btnTheme" onClick={() => setModalAberto(false)}>&times;</button>
           
           <div className="modal-content animate-scale-up" onClick={(e) => e.stopPropagation()}>
             <iframe 

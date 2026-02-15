@@ -44,7 +44,7 @@ const Modal = ({ projeto, onClose }) => {
 
   return (
     <div className={`${styles.modalContainer} ${styles.animateFadeIn}`} onClick={onClose}>
-      <button className={styles.btnCloseModal} onClick={onClose}>X</button>
+      <button className={`${styles.btnCloseModal} btnTheme`} onClick={onClose}>X</button>
       <div className={`${styles.modalContent} ${styles.animateScaleUp}`} onClick={(e) => e.stopPropagation()}>
         <div className="swiper-container-projects">
           {imagensDoProjeto.length > 0 ? (
@@ -74,7 +74,7 @@ const Modal = ({ projeto, onClose }) => {
               ))}
             </Swiper>
           ) : (
-            <p>Nenhuma imagem encontrada para este projeto.</p>
+            <p className="secondaryTextTheme">Nenhuma imagem encontrada para este projeto.</p>
           )}
         </div>
 
@@ -102,7 +102,7 @@ const Modal = ({ projeto, onClose }) => {
             <p>{projeto.observacoes}</p>
           </div>
           <div className={styles.btnModalLink}>
-            <button className={`${styles.btnProject} btn`} onClick={() => linkButton(projeto)}>Ver Projeto</button>          
+            <button className='btn secondaryBtnTheme' onClick={() => linkButton(projeto)}>Ver Projeto</button>          
           </div>
         </div>
       </div>
@@ -130,12 +130,12 @@ const Projetos = () => {
     <div className={styles.projectsContainer}>
       <ul>
         {arrayProjects.map((proj) => (
-            <li key={proj.id} className={styles.projectContent}>
+            <li key={proj.id} className={`${styles.projectContent} textTheme`}>
               <img src={proj.img} alt="" />
               <h3>{proj.titulo}</h3>
               <p>{proj.resumo}</p>
               
-              <button className={`${styles.btnProject} btn`} onClick={() => setProjetoSelecionado(proj)}>
+              <button className='btn secondaryBtnTheme' onClick={() => setProjetoSelecionado(proj)}>
                 Ver detalhes
               </button>
             </li>

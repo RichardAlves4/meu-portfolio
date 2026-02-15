@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from  "./header.module.css"; 
-
-// import { ThemeSelect } from "../themeSelect/ThemeSelect_temp";
+import { ThemeSelect } from "../themeSelect/ThemeSelect";
+import { HiMenu } from "react-icons/hi";
 
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -14,77 +14,77 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className='containerTheme'>
       <section className={styles.logoContainer}>
           <img src={logo} alt="" className={styles.logo}/>
       </section>
 
-      <section className={`${styles.navBar} ${menuOpen ? styles.active : ""}`}>
+      <section className={`${styles.navBar} ${menuOpen ? styles.active : ""} containerTheme`}>
         <ul>
           <li>
             <a
               href="#about"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Sobre
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme" />
 
           <li>
             <a
               href="#formation"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Formação
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#certificates"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Certificados
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#projects"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Projetos
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#technologies"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Tecnologias
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#contacts"
-              className={styles.anchor}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Contatos
@@ -95,22 +95,22 @@ const Header = () => {
         <img src={logo} alt="" className={styles.logo && styles.logoNavbar}/>
       </section>
 
-      <section id="menu-icon-content" 
+      <section
       onClick={toggleMenu} 
       className={`${styles.menuHidden}  ${menuOpen ?  styles.open : ""}`}
       >
-        <img src={menu_icon} alt="Menu" />
+        <HiMenu className={`${styles.icon} iconTheme`} />
       </section>
 
-      {/* <section id="items-content">
+      <section className={styles.itensContainer}>
         <div>
           <ThemeSelect />
         </div>
 
         <div>
-          <button>BR</button>
+          <button style={{display:'none'}}>BR</button>
         </div>
-      </section> */}
+      </section>
     </header>
   );
 };

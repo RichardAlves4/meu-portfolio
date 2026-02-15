@@ -1,41 +1,32 @@
-import { useState } from 'react';
-import './themeSelector.css';
+import { useTheme } from "../../context/ThemeContext";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { WiMoonWaxingCrescent3 } from "react-icons/wi";
+
+import "./themeSelect.css";
 
 const themes = [
-  { id: 'default', name: 'Padrão', img: '../../src/assets/default-mode.png' },
-  { id: 'dark', name: 'Dark mode', img: '../../src/assets/dark-mode.png' },
-  { id: 'red', name: 'Red Mode', img: '../../src/assets/red-mode.png' },
+  { id: "punk", icon: <MdOutlineWbSunny /> },
+  { id: "dark", icon: <WiMoonWaxingCrescent3 /> },
 ];
 
 const ThemeSelect = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedTheme, setSelectedTheme] = useState(themes[0]);
+  const { theme: currentThemeId, setTheme } = useTheme();
+
+  
+  const toggleTheme = () => {
+    const nextTheme = currentThemeId === "punk" ? "dark" : "punk";
+    setTheme(nextTheme);
+  };
+
+  const activeTheme = themes.find((theme) => theme.id === currentThemeId) || themes[0];
 
   return (
     <div className="theme-container">
-      <div className="selected-box" onClick={() => setIsOpen(!isOpen)}>
-        <img src={selectedTheme.img} key='default' />
+      <div className="selected-box iconTheme" onClick={toggleTheme}>
+        {activeTheme.icon}
       </div>
-
-      {isOpen && (
-        <div className="options-grid">
-          {themes.map((theme) => (
-            <div 
-              key={theme.id} 
-              className="option-item"
-              onClick={() => {
-                setSelectedTheme(theme);
-                setIsOpen(false);
-              }}
-            >
-              <img src={theme.img} alt={theme.name} />
-              <span>{theme.name}</span>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
-}
+};
 
-export {ThemeSelect};
+export { ThemeSelect };
