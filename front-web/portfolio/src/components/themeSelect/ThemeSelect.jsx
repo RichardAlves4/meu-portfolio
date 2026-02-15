@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTheme } from '../../context/ThemeContext';
-import './themeSelector.css';
+import './themeSelect.css';
 
 const themes = [
   { id: 'punk', name: 'Padrão', img: '../../src/assets/default-mode.png' },
