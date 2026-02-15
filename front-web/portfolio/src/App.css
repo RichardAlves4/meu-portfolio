@@ -15,6 +15,7 @@
   --secondary-color: #8d25d5;
   --primary-title-color: #8d25d5;
   --secondary-title-color: #b9f75d;
+  --keyWord-color: #b9f75d;
   --primary-text-color: #1c1c1c;
   --secondary-text-color: #f0f0f0;
   --primary-icon-color: #1c1c1c;
@@ -30,6 +31,7 @@
   --secondary-color: #202124;
   --primary-title-color: #f0f0f0;
   --secondary-title-color: #f0f0f0;
+  --keyWord-color: rgb(210, 210, 0);
   --primary-text-color: #f0f0f0;
   --secondary-text-color: #f0f0f0;
   --primary-icon-color: #f0f0f0;
@@ -114,6 +116,10 @@ main {
 
 .secondaryborderTheme {
   border: 3px solid var(--secondary-border-color);
+}
+
+.keyWordTheme {
+  color: var(--keyWord-color);
 }
 
 .btn {

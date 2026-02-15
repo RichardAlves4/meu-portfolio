@@ -24,18 +24,18 @@ const Home = () => {
             <h2 className="secondaryTextTheme">dev full-stack</h2>
 
             <p className={`${styles.paragraphAboutContainer} secondaryTextTheme`}>Durante o ensino médio tive a grande oportunidade de 
-              fazer um <span className={`${styles.keyWordAboutContent} titleTheme`}>curso técnico</span> em <span className={`${styles.keyWordAboutContent} titleTheme`}>ADS no Senai</span>. Nesse curso eu estudei programação 
+              fazer um <span className={`${styles.keyWordAboutContent} keyWordTheme`}>curso técnico</span> em <span className={`${styles.keyWordAboutContent} keyWordTheme`}>ADS no Senai</span>. Nesse curso eu estudei programação 
               por dois anos e tive certeza que gostaria de seguir na área da tecnologia. 
-              Nesse curso tive contato com linguagens como <span className={`${styles.keyWordAboutContent} titleTheme`}>HTML e CSS</span>. Também usei 
-              linguagens de programação, ferramentas e frameworks como <span className={`${styles.keyWordAboutContent} titleTheme`}>JS</span>, <span className={`${styles.keyWordAboutContent} titleTheme`}>Git/Git Hub</span>, 
-              <span className={`${styles.keyWordAboutContent} titleTheme`}>React + Vite</span> entre outros... Durante meu período no Senai também fiz um 
-              curso de <span className={`${styles.keyWordAboutContent} titleTheme`}>JAVA</span> e outro de Power BI. Após a graduação em meu curso técnico 
-              eu dei inicio ao ensino superior na <span className={`${styles.keyWordAboutContent} titleTheme`}>Unip Paulista</span> onde atualmente estou 
+              Nesse curso tive contato com linguagens como <span className={`${styles.keyWordAboutContent} keyWordTheme`}>HTML e CSS</span>. Também usei 
+              linguagens de programação, ferramentas e frameworks como <span className={`${styles.keyWordAboutContent} keyWordTheme`}>JS</span>, <span className={`${styles.keyWordAboutContent} keyWordTheme`}>Git/Git Hub</span>, 
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`}>React + Vite</span> entre outros... Durante meu período no Senai também fiz um 
+              curso de <span className={`${styles.keyWordAboutContent} keyWordTheme`}>JAVA</span> e outro de Power BI. Após a graduação em meu curso técnico 
+              eu dei inicio ao ensino superior na <span className={`${styles.keyWordAboutContent} keyWordTheme`}>Unip Paulista</span> onde atualmente estou 
               cursando ADS para aperfeiçoar meu conhecimento e aprender ainda mais. 
               Atualmente estou para dar inicio ao meu terceiro semestre e estou 
               buscando um estágio para conseguir experiência e aprender como lidar com 
               situações reais do coditiano de um programador nas empresas. Atualmente 
-              meus <span className={`${styles.keyWordAboutContent} titleTheme`}>objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
+              meus <span className={`${styles.keyWordAboutContent} keyWordTheme`}>objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
           </div>
         </div>
       </section>
