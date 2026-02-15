@@ -1,39 +1,39 @@
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 5pc;
-    position: fixed;
-    width: 100%;
-    padding: 0 50px;
-    z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5pc;
+  position: fixed;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 99;
 }
 
 .menuHidden {
-    display: flex;
-    visibility: hidden; 
+  display: none;
+  visibility: hidden;
 }
 
 .navBar ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  list-style: none;
 }
 
 .navBar ul hr {
-    display: none;
+  display: none;
 }
 
 .anchor {
-    display: flex;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: transform 0.3s;
+  display: flex;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.3s;
 }
 
 .anchor:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .logoNavbar {
@@ -46,109 +46,105 @@ header {
 }
 
 .itensContainer {
-    display: flex;
-    gap: 40px;
-    
-
+  display: flex;
+  gap: 40px;
 }
 
 @media (max-width: 750px) {
-    
-    .navBar {
-        display: none;
-    }
 
-    .logoContainer {
-      display: none;
-    }
+  header {
+    justify-content: space-between;
+  }
 
-    .menuHidden {
-        visibility: visible;
-        cursor: pointer;
-        z-index: 1001;
-        display: flex;
-        transition: transform 0.5s ease;
-    }
+  .navBar {
+    display: none;
+  }
 
-    .menuHidden.open {
-        transform: rotate(90deg);
-      }
+  .logoContainer {
+    display: none;
+  }
 
-    .navBar {
-        position: fixed;
-        left: -100%; /* Começa fora da tela */
-        top: 0;
-        height: 100%;
-        background-color: #baf75d; /* Cor de fundo do menu */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        transition: left 0.5s ease-in-out; /* Efeito suave ao abrir */
-        z-index: 1000;
-        gap: 50px;
-      }
+  .menuHidden {
+    display: flex;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
 
-      .navBar ul {
-        display: grid;
-        padding: 0 30px;
-        gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 50px;
-      }
+  .menuHidden.open {
+    transform: rotate(90deg);
+  }
 
-      .navBar.active {
-        left: 0;
-      }
+  .navBar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    transition: left 0.5s ease-in-out;
+    z-index: 1000;
+    gap: 50px;
+  }
 
-      .navBar ul hr {
-        display: flex;
-        width: 100%;
-        height: 1px;
-        background-color: black;
-        
-        }
-    
-      .anchor {
-        color: black;
-        font-size: 1.2rem;
-        
-      }
+  .navBar ul {
+    display: grid;
+    padding: 0 30px;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
 
-      .logoNavbar {
-        display: flex;
-        max-width: 100px;
-        margin-bottom: 20px;
-      }
+  .navBar.active {
+    left: 0;
+  }
+
+  .navBar ul hr {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    border: none;
+  }
+
+  .anchor {
+    font-size: 1.2rem;
+  }
+
+  .logoNavbar {
+    display: flex;
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-height: 600px) {
   .navBar {
-        position: fixed;
-        left: -100%; 
-        top: 0;
-        height: 100%;
-        background-color: #baf75d;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        transition: left 0.5s ease-in-out;
-        z-index: 1000;
-        gap: 20px;
-      }
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    transition: left 0.5s ease-in-out;
+    z-index: 1000;
+    gap: 20px;
+  }
 
-      .navBar ul {
-        display: grid;
-        padding: 0 30px;
-        gap: 10px;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 50px;
-      }
+  .navBar ul {
+    display: grid;
+    padding: 0 30px;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
 
-      .anchor {
-        color: black;
-        font-size: 1.0rem;
-        
-      }
+  .anchor {
+    font-size: 1rem;
+  }
 }

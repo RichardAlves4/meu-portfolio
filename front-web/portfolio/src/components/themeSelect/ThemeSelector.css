@@ -8,7 +8,6 @@
 .selected-box {
     width: 24px;
     height: 24px;
-    border: 2px solid #fa0bfe;
     border-radius: 100%;
     cursor: pointer;
 
@@ -24,6 +23,7 @@
 .options-grid {
     position: absolute;
     display: flex;
+    box-sizing: border-box;
     top: 100%;   
     left: 50%;      
     transform: translateX(-50%); 
@@ -33,6 +33,7 @@
 }
     
 .option-item {
+    /* background: linear-gradient(45deg, #2980b9, #27ae70); */
     width: 24px;
     text-align: center;
     cursor: pointer;
@@ -42,7 +43,7 @@
     justify-content: center;
     text-align: center;
     gap: 8px;
-
+    color: white;
 }
     
 .option-item img {

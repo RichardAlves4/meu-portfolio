@@ -29,11 +29,6 @@
     word-wrap: break-word;
 }
 
-.btnProject {
-    color: #fff;
-    background-color: #8d25d5;
-}
-
 .modalContainer {
     position: fixed;
     top: 0;
@@ -51,8 +46,6 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #b9f75d;
-    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -65,7 +58,6 @@
 
 .btnCloseModal:hover {
     transform: scale(1.1);
-    background: #baf75dd2;
 }
   
 .animateFadeIn {

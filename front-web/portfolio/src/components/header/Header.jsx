@@ -18,72 +18,72 @@ const Header = () => {
           <img src={logo} alt="" className={styles.logo}/>
       </section>
 
-      <section className={`${styles.navBar} ${menuOpen ? styles.active : ""}`}>
+      <section className={`${styles.navBar} ${menuOpen ? styles.active : ""} containerTheme`}>
         <ul>
           <li>
             <a
               href="#about"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Sobre
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme" />
 
           <li>
             <a
               href="#formation"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Formação
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#certificates"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Certificados
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#projects"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Projetos
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#technologies"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Tecnologias
             </a>
           </li>
 
-          <hr />
+          <hr className="hrTheme"/>
 
           <li>
             <a
               href="#contacts"
-              className={`${styles.anchor} anchorTheme`}
+              className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
               Contatos
@@ -94,7 +94,7 @@ const Header = () => {
         <img src={logo} alt="" className={styles.logo && styles.logoNavbar}/>
       </section>
 
-      <section id="menu-icon-content" 
+      <section
       onClick={toggleMenu} 
       className={`${styles.menuHidden}  ${menuOpen ?  styles.open : ""}`}
       >
@@ -107,7 +107,7 @@ const Header = () => {
         </div>
 
         <div>
-          <button>BR</button>
+          <button style={{display:'none'}}>BR</button>
         </div>
       </section>
     </header>

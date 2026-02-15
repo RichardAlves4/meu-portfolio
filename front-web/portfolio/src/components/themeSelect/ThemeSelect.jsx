@@ -4,7 +4,6 @@ import './themeSelector.css';
 
 const themes = [
   { id: 'punk', name: 'Padrão', img: '../../src/assets/default-mode.png' },
-  { id: 'red', name: 'Red Mode', img: '../../src/assets/red-mode.png' },
   { id: 'dark', name: 'Dark mode', img: '../../src/assets/dark-mode.png' },
 ];
 
@@ -15,7 +14,7 @@ const ThemeSelect = () => {
 
   return (
     <div className="theme-container">
-      <div className="selected-box" onClick={() => setIsOpen(!isOpen)}>
+      <div className="selected-box secondaryborderTheme" onClick={() => setIsOpen(!isOpen)}>
         <img src={selectedTheme.img} key='default' />
       </div>
 

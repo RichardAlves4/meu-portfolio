@@ -10,7 +10,7 @@ import instagram from "../../assets/footer-icons/instagram.png"
 const Footer = () => {
   return (
     <footer id='contacts' className='containerTheme'>
-        <h1 className="purple">REDE/CONTATO</h1>
+        <h1 className="secondaryTitleTheme">REDE/CONTATO</h1>
 
         <section className={styles.anchorsContainer}>
         <div className={styles.anchorsMedia}>

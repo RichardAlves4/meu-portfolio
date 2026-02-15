@@ -5,10 +5,6 @@
     width: 100%;
 }
 
-/* .aboutContainer {
-    background-color: #8d25d5;
-} */
-
 .aboutContainer h1 {
     margin-top: 100px;
 }
@@ -32,17 +28,12 @@ h1 {
     flex-wrap: wrap;
 }
 
-.imgTextContainer h2{
-    color: #fff;
-}
-
 .imgAbout {
     width: 300px;
-    border: 2px solid #b9f75d;
     border-radius: 10px;
 }
 
-#photo-content {
+.imgAboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,18 +50,15 @@ h1 {
     max-width: 500px;
     word-wrap: break-word;
     text-align: justify;
-    color: #fff;
 }
 
 .keyWordAboutContent {
-    color: #b9f75d;
     font-weight: bold;
 }
 
 /* FORMAÇÃO */
 .formationContainer {
     display: flex;
-    background-color: #b9f75d;
     flex-direction: column;
     align-items: center;
 }
@@ -78,13 +66,7 @@ h1 {
 .cardsFormationContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: #1c1c1c;
     gap: 60px;
-}
-
-/* CERTIFICADOS */
-.certificatesContent {
-    background-color: #8d25d5;
 }
 
 /* PROJETOS */
@@ -92,7 +74,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #b9f75d;
 }
 
 /* TECNOLOGIAS */
@@ -100,7 +81,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #8d25d5;
     gap: 30px;
 }
 

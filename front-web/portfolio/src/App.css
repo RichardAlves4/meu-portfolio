@@ -19,28 +19,25 @@
   --secondary-text-color: #f0f0f0;
   --primary-icon-color: #1c1c1c;
   --secondary-icon-color: #f0f0f0;
-}
-
-[data-theme="red"] {
-  --primary-color: #cd524a;
-  --secondary-color: red;
-  --primary-title-color: red;
-  --secondary-title-color: red;
-  --primary-text-color: red;
-  --secondary-text-color: red;
-  --primary-icon-color: red;
-  --secondary-icon-color: red;
+  --primary-anchor-color: #8d25d5;
+  --secondary-anchor-color: #1c1c1c;
+  --primary-border-color: #b9f75d;
+  --secondary-border-color: #8d25d5;
 }
 
 [data-theme="dark"] {
-  --primary-color: #000;
-  --secondary-color: #000;
-  --primary-title-color: #000;
-  --secondary-title-color: #000;
-  --primary-text-color: #000;
-  --secondary-text-color: #000;
-  --primary-icon-color: #000;
-  --secondary-icon-color: #000;
+  --primary-color: #282C2F;
+  --secondary-color: #202124;
+  --primary-title-color: #f0f0f0;
+  --secondary-title-color: #f0f0f0;
+  --primary-text-color: #f0f0f0;
+  --secondary-text-color: #f0f0f0;
+  --primary-icon-color: #f0f0f0;
+  --secondary-icon-color: #f0f0f0;
+  --primary-anchor-color: #f0f0f0;
+  --secondary-anchor-color: #f0f0f0;
+  --primary-border-color: #f0f0f0;
+  --secondary-border-color: #f0f0f0;
 }
 
 main {
@@ -49,6 +46,14 @@ main {
 }
 
 /* CERTIFICADOS */
+.titleTheme {
+  color: var(--secondary-title-color);
+}
+
+.secondaryTitleTheme {
+  color: var(--primary-title-color);
+}
+
 .textTheme {
   color: var(--primary-text-color);
 }
@@ -83,7 +88,11 @@ main {
 }
 
 .anchorTheme {
-  color: var(--secondary-color);
+  color: var(--primary-anchor-color);
+}
+
+.secondaryAnchorTheme {
+  color: var(--secondary-anchor-color);
 }
 
 .iconTheme {
@@ -95,12 +104,16 @@ main {
   fill: var(--secondary-icon-color);
 }
 
-.purple {
-  color: #8d25d5;
+.hrTheme {
+  background-color: var(--primary-icon-color);
 }
 
-.green {
-  color: #b9f75d;
+.borderTheme {
+  border:3px solid var(--primary-border-color);
+}
+
+.secondaryborderTheme {
+  border: 3px solid var(--secondary-border-color);
 }
 
 .btn {
@@ -121,7 +134,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b9f75d;
+  background-color: var(--secondary-title-color);
   border-radius: 10px;
-  border: 3px solid #8d25d5;
+  border: 3px solid var(--secondary-color);
 }
