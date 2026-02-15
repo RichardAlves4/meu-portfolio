@@ -1,11 +1,8 @@
 import React from 'react';
 import styles from "./footer.module.css";
 
-import linkedin from "../../assets/footer-icons/linkedin.png"
-import github from "../../assets/footer-icons/github.png"
-import email from "../../assets/footer-icons/e-mail.png"
-import whatsapp from "../../assets/footer-icons/whatsapp.png"
-import instagram from "../../assets/footer-icons/instagram.png"
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 
 const Footer = () => {
   return (
@@ -15,27 +12,27 @@ const Footer = () => {
         <section className={styles.anchorsContainer}>
         <div className={styles.anchorsMedia}>
           <a href="https://www.linkedin.com/in/richardalves4/" className={styles.icon}>
-              <img src={linkedin} alt=""></img>
+            <FaLinkedin className='iconTheme'/>
             <p className='textTheme'>Linkedin</p>
           </a>
 
           <a href="https://github.com/RichardAlves4" className={styles.icon}>
-            <img src={github} alt="" ></img>
+            <FaGithub className='iconTheme'/>
             <p className='textTheme'>GitHub</p>
           </a>
 
-          <a href="mailto:richardalvessilva41@gmail.com" className={styles.icon}>
-            <img src={email} alt=""></img>
+          <a href="mailto:richardalvessilva41@gmail.com" className={styles.icon}>        
+            <TfiEmail className='iconTheme'/>
             <p className='textTheme'>E-mail</p>
           </a>
 
-          <a href="https://wa.me/5511978393539" className={styles.icon}>
-            <img src={whatsapp} alt=""></img>
+          <a href="https://wa.me/5511978393539" className={styles.icon}>    
+            <FaWhatsapp className='iconTheme'/>
             <p className='textTheme'>Whatsapp</p>
           </a>
 
-          <a href="https://www.instagram.com/r1chard.alves/" className={styles.icon}>
-            <img src={instagram} alt=""></img>
+          <a href="https://www.instagram.com/r1chard.alves/" className={styles.icon}>          
+            <FaInstagram className='iconTheme'/>
             <p className='textTheme'>Instagram</p>
           </a>
         </div>

@@ -14,6 +14,11 @@ header {
   visibility: hidden;
 }
 
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
 .navBar ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

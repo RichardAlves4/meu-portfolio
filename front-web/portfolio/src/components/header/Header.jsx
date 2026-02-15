@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from  "./header.module.css"; 
 import { ThemeSelect } from "../themeSelect/ThemeSelect";
+import { HiMenu } from "react-icons/hi";
 
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -98,7 +99,7 @@ const Header = () => {
       onClick={toggleMenu} 
       className={`${styles.menuHidden}  ${menuOpen ?  styles.open : ""}`}
       >
-        <img src={menu_icon} alt="Menu" />
+        <HiMenu className={`${styles.icon} iconTheme`} />
       </section>
 
       <section className={styles.itensContainer}>
