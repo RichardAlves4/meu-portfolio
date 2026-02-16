@@ -1,0 +1,19 @@
+.cardsFormationContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.cardContent {
+    width: 100%;
+    max-width: 250px;
+    word-wrap: break-word;
+    text-align: center;
+    
+}
+
+@media (max-width: 630px) {
+    .cardsFormationContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

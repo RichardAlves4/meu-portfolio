@@ -63,11 +63,7 @@ h1 {
     align-items: center;
 }
 
-.cardsFormationContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-}
+
 
 /* PROJETOS */
 .projectsContainer {  
@@ -84,27 +80,3 @@ h1 {
     gap: 30px;
 }
 
-.iconsTechnologiesContainer {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
-
-}
-
-@media (max-width: 770px) {
-    .iconsTechnologiesContainer {
-    grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 630px) {
-    .cardsFormationContainer {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 413px) {
-    .iconsTechnologiesContainer {
-    grid-template-columns: repeat(2, 1fr);
-    }
-}
