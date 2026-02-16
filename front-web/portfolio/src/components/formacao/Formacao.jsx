@@ -1,31 +1,18 @@
-import React from 'react'
-import { FormacaoCards } from '../formacaoCards/FormacaoCards'
+import React from "react";
+import formacaoBD from "./formacaoBD";
+
+import styles from "./formacao.module.css";
 
 export function Formacao() {
   return (
-    <>
-    <FormacaoCards>
-        <h2>SESI</h2>
-        <b>Conclusão: 12/2024</b>
-        <p>Ensino médio completo.</p>
-    </FormacaoCards>
-
-    <FormacaoCards>
-        <h2>SENAI</h2>
-        <b>Conclusão: 12/2025</b>
-        <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.</p>
-    </FormacaoCards>
-
-    <FormacaoCards>
-        <h2>UNIP</h2>
-        <b>Conclusão: 12/2026</b>
-        <p>Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Cursando.</p>
-    </FormacaoCards>
-
-    <FormacaoCards>
-        <h2>HASHTAG TREINAMENTOS</h2>
-        <p>Plataforma de cursos online.</p>
-    </FormacaoCards>
-    </>
-  )
+    <div className={`${styles.cardsFormationContainer} textTheme`}>
+      {formacaoBD.map((formation) => (
+        <div key={formation.id} className={`${styles.cardContent} textTheme`}>
+          <h2>{formation.nome}</h2>
+          <b>Conclusão: {formation.conclusao}</b>
+          <p>{formation.descricao}</p>
+        </div>
+      ))}
+    </div>
+  );
 }

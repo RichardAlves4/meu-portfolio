@@ -1,9 +1,9 @@
 import React from "react";
 
-import {Formacao} from "../../components/formacao/Formacao"
+import { Formacao } from "../../components/formacao/Formacao";
 import { Certificados } from "../../components/certificados/Certificados"
 import { Projetos } from "../../components/projetos/Projetos"
-import { TecnologiasLayout } from "../../components/tecnologiasLayout/TecnologiasLayout";
+import { Tecnologias } from "../../components/tecnologias/Tecnologias";
 
 import styles from "./home.module.css";
 import myPhoto from "../../assets/richard.jpg";
@@ -43,7 +43,7 @@ const Home = () => {
       <section className={`${styles.formationContainer} containerTheme`} id='formation'>
         <h1 className="secondaryTitleTheme">FORMAÇÃO</h1>
 
-        <div className={`${styles.cardsFormationContainer} textTheme`}>
+        <div >
           <Formacao/>
         </div>
       </section>
@@ -62,7 +62,7 @@ const Home = () => {
         <h1 className="titleTheme">TECNOLOGIAS</h1>
 
         <div className={styles.iconsTechnologiesContainer}>
-          <TecnologiasLayout/>
+          <Tecnologias/>
         </div>
       </section>
     </div>
