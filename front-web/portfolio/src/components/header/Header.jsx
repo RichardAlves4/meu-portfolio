@@ -5,6 +5,7 @@ import { HiMenu } from "react-icons/hi";
 
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
+import { LanguageSwitcher } from '../languageSwitcher/LanguageSwitcher';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -109,6 +110,7 @@ const Header = () => {
 
         <div>
           <button style={{display:'none'}}>BR</button>
+          <LanguageSwitcher/>
         </div>
       </section>
     </header>
