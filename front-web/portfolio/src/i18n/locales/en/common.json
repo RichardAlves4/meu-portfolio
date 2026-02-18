@@ -1,6 +1,10 @@
 {
-  "header": {
-    "title": "Bem-vindo",
-    "subtitle": "Selecione uma opção"
+  "navbar": {
+    "anchor1":"About",
+    "anchor2":"Training",
+    "anchor3":"Certificates",
+    "anchor4":"Projects",
+    "anchor5":"Technologies",
+    "anchor6":"Contact Us"
   }
 }

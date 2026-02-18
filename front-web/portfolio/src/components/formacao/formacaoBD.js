@@ -16,12 +16,6 @@ const formacaoBD = [
         nome: 'UNIP',
         conclusao: '12/2026',
         descricao: 'Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Cursando.'
-    },
-    {
-        id:4,
-        nome: 'HASHTAG TREINAMENTOS',
-        conclusao: '',
-        descricao: 'Plataforma de cursos online.'
     }
 ]
 
