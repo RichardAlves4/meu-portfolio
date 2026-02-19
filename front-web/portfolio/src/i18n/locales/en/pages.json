@@ -1,4 +1,15 @@
 {
+  "about": {
+    "title": "ABOUT",
+    "description": "During high school, I had the great opportunity to take a <0>technical course</0> in <1>ADS (Systems Analysis and Development) at Senai</1>. In this course, I studied programming for two years and became certain that I wanted to pursue a career in technology. In this course, I was exposed to languages ​​such as <2>HTML and CSS</2>. I also used programming languages, tools, and frameworks such as <3>JS</3>, <4>Git/GitHub</4>, <5>React + Vite</5>, among others. During my time at Senai, I also took a <6>Java</6> course and a Power BI course. After graduating from my technical course, I began my higher education at <7>Unip Paulista</7>, where I am currently studying ADS to improve my knowledge and learn even more. I am currently about to begin my third semester and am looking for an internship to gain experience and learn how to handle real-world situations faced by a programmer in companies. Currently my <8>goals</8> are: To learn, to study, and to get an internship."
+  },
+  "formation": {
+    "title":"FORMATION",
+    "label_conclusion": "Conclusion",
+    "sesi_desc": "High school completed.",
+    "senai_desc": "Technical Course - ADS - Completed.",
+    "unip_desc": "higher education - ADS - In progress."
+  },
   "footer": {
     "title": "Network/contact",
     "reserved": "Copyright 2026 - Richard Alves - All rights reserved."

@@ -1,4 +1,16 @@
 {
+  "about": {
+    "title": "SOBRE",
+    "description": "Durante o ensino médio tive a grande oportunidade de fazer um <0>curso técnico</0> em <1>ADS no Senai</1>. Nesse curso eu estudei programação por dois anos e tive certeza que gostaria de seguir na área da tecnologia. Nesse curso tive contato com linguagens como <2>HTML e CSS</2>. Também usei linguagens de programação, ferramentas e frameworks como <3>JS</3>, <4>Git/Git Hub</4>, <5>React + Vite</5> entre outros... Durante meu período no Senai também fiz um curso de <6>JAVA</6> e outro de Power BI. Após a graduação em meu curso técnico eu dei inicio ao ensino superior na <7>Unip Paulista</7> onde atualmente estou cursando ADS para aperfeiçoar meu conhecimento e aprender ainda mais. Atualmente estou para dar inicio ao meu terceiro semestre e estou buscando um estágio para conseguir experiência e aprender como lidar com situações reais do coditiano de um programador nas empresas. Atualmente meus <8>objetivos</8> são: Aprender, estudar e conseguir um estágio."
+
+  },
+  "formation": {
+    "title":"FORMAÇÃO",
+    "label_conclusion": "Conclusão",
+    "sesi_desc": "Ensino médio completo.",
+    "senai_desc": "Curso Técnico - ADS - Completo.",
+    "unip_desc": "Ensino Superior - ADS - Cursando."
+  },
   "footer": {
     "title": "Rede/contato",
     "reserved": "Copyright 2026 - Richard Alves - Todos os direitos reservados."

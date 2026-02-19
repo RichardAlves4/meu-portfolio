@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 
 import { Formacao } from "../../components/formacao/Formacao";
 import { Certificados } from "../../components/certificados/Certificados"
@@ -9,10 +10,12 @@ import styles from "./home.module.css";
 import myPhoto from "../../assets/richard.jpg";
 
 const Home = () => {
+  const { t } = useTranslation('pages');
+
   return (
     <div className={styles.home}>
       <section className={`${styles.aboutContainer} secondaryContainerTheme`} id='about'>
-        <h1 className="titleTheme">SOBRE</h1>
+        <h1 className="titleTheme">{t('about.title')}</h1>
 
         <div className={styles.imgTextContainer}>
           <div className={styles.imgAboutContainer}>
@@ -21,27 +24,27 @@ const Home = () => {
           </div>
 
           <div className={styles.textAboutContainer}>
-            <h2 className="secondaryTextTheme">dev full-stack</h2>
+            <h2 className="secondaryTextTheme">Dev Full-stack</h2>
 
-            <p className={`${styles.paragraphAboutContainer} secondaryTextTheme`}>Durante o ensino médio tive a grande oportunidade de 
-              fazer um <span className={`${styles.keyWordAboutContent} keyWordTheme`}>curso técnico</span> em <span className={`${styles.keyWordAboutContent} keyWordTheme`}>ADS no Senai</span>. Nesse curso eu estudei programação 
-              por dois anos e tive certeza que gostaria de seguir na área da tecnologia. 
-              Nesse curso tive contato com linguagens como <span className={`${styles.keyWordAboutContent} keyWordTheme`}>HTML e CSS</span>. Também usei 
-              linguagens de programação, ferramentas e frameworks como <span className={`${styles.keyWordAboutContent} keyWordTheme`}>JS</span>, <span className={`${styles.keyWordAboutContent} keyWordTheme`}>Git/Git Hub</span>, 
-              <span className={`${styles.keyWordAboutContent} keyWordTheme`}>React + Vite</span> entre outros... Durante meu período no Senai também fiz um 
-              curso de <span className={`${styles.keyWordAboutContent} keyWordTheme`}>JAVA</span> e outro de Power BI. Após a graduação em meu curso técnico 
-              eu dei inicio ao ensino superior na <span className={`${styles.keyWordAboutContent} keyWordTheme`}>Unip Paulista</span> onde atualmente estou 
-              cursando ADS para aperfeiçoar meu conhecimento e aprender ainda mais. 
-              Atualmente estou para dar inicio ao meu terceiro semestre e estou 
-              buscando um estágio para conseguir experiência e aprender como lidar com 
-              situações reais do coditiano de um programador nas empresas. Atualmente 
-              meus <span className={`${styles.keyWordAboutContent} keyWordTheme`}>objetivos</span> são: Aprender, estudar e conseguir um estágio.</p>
+            <p className={`${styles.paragraphAboutContainer} secondaryTextTheme`}>
+              <Trans i18nKey="about.description" t={t}>
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              <span className={`${styles.keyWordAboutContent} keyWordTheme`} />
+              </Trans>
+            </p>
           </div>
         </div>
       </section>
 
       <section className={`${styles.formationContainer} containerTheme`} id='formation'>
-        <h1 className="secondaryTitleTheme">FORMAÇÃO</h1>
+        <h1 className="secondaryTitleTheme">{t('formation.title')}</h1>
 
         <div >
           <Formacao/>
