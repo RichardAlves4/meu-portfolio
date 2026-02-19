@@ -57,7 +57,7 @@ const Home = () => {
       </section>
 
       <section className={`${styles.projectsContainer} containerTheme`} id='projects'>
-        <h1 className="secondaryTitleTheme">PROJETOS</h1>
+        <h1 className="secondaryTitleTheme">{t('common:projects.title')}</h1>
         <Projetos/>
       </section>
 

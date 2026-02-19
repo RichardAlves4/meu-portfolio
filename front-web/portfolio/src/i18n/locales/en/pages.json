@@ -26,6 +26,24 @@
     "description_text6": "Fundamentals from basic to advanced, programming logic, API, ExpressJS.",
     "description_text7": "NodeJS fundamentals, creating APIs with ExpressJS."
   },
+  "students_cool": {
+    "introduction_text":"\"Students-cool\" was my final project for the technical course in systems analysis and development at Senai in Santo André.",
+    "objective_text":"This project was created with the goal of reducing food waste in educational institutions. To achieve this goal, my group and I created an interactive online menu (for PC and mobile), where those responsible for distributing food could input the day's menu, and students could select exactly what they would consume. This allowed professionals to accurately calculate the quantity to be produced, reducing food waste.",
+    "front_text":"Front-end: HTML, CSS, TypeScript, React, Figma;",
+    "back_text":"Back-end: Java,Spring Boot,Firebase Auth;",
+    "dados_text":"Database: MySQL;",
+    "observations_text":"In this project, I worked on front-end development, and I can say that it was the best project I developed while at Senai. During development, I learned a lot about teamwork. It was also through this project that I developed a taste for programming and decided to pursue it as a career. Furthermore, I owe a great deal to the team that participated with me on this project. Because of them, I had the experience of working in a united and enthusiastic team, which led me to give my best to develop this project. For this and other reasons, I am very grateful to them.",
+    "resume": "Interactive online menu for educational institutions, aimed at reducing food waste."
+  },
+  "pim2": {
+    "introduction_text":"The goal of this PIM (Project Integrated Module) was to create an academic system to manage classes, students, and lessons, and the generated data should be persistent.",
+    "objective_text":"The main objective of this project was to reduce the waste of materials and paper, considering that the system would be developed for an institution that did everything manually. Therefore, my team and I focused on making this system as complete as possible.",
+    "front_text":"Front-end: TKinter(native python), CustomTKinter(library).",
+    "back_text":"Back-end: Python, C.",
+    "dados_text":"Database: files .json.",
+    "observations_text":"This project ended up being more extensive than complex, as the technologies and concepts allowed were basic. Since I was already familiar with much of what was used in the project, I didn't learn much about the programming side. But I learned a lot being practically the QA for this project, and I also learned a great deal about managing/leading the development of a project.",
+    "resume": "PIM is a multidisciplinary team project at Unip; its grade is used as a separate subject grade and is also included in the calculation of the average for each subject."
+  },
   "footer": {
     "title": "Network/contact",
     "reserved": "Copyright 2026 - Richard Alves - All rights reserved."

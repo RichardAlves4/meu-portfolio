@@ -15,27 +15,27 @@ const Footer = () => {
 
         <section className={styles.anchorsContainer}>
         <div className={styles.anchorsMedia}>
-          <a href="https://www.linkedin.com/in/richardalves4/" className={styles.icon}>
+          <a href="https://www.linkedin.com/in/richardalves4/" target='_blank' rel='noreferrer' className={styles.icon}>
             <FaLinkedin className='iconTheme'/>
             <p className='textTheme'>Linkedin</p>
           </a>
 
-          <a href="https://github.com/RichardAlves4" className={styles.icon}>
+          <a href="https://github.com/RichardAlves4" target='_blank' rel='noreferrer' className={styles.icon}>
             <FaGithub className='iconTheme'/>
             <p className='textTheme'>GitHub</p>
           </a>
 
-          <a href="mailto:richardalvessilva41@gmail.com" className={styles.icon}>        
+          <a href="mailto:richardalvessilva41@gmail.com" target='_blank' rel='noreferrer' className={styles.icon}>        
             <TfiEmail className='iconTheme'/>
             <p className='textTheme'>E-mail</p>
           </a>
 
-          <a href="https://wa.me/5511978393539" className={styles.icon}>    
+          <a href="https://wa.me/5511978393539" target='_blank' rel='noreferrer' className={styles.icon}>    
             <FaWhatsapp className='iconTheme'/>
             <p className='textTheme'>Whatsapp</p>
           </a>
 
-          <a href="https://www.instagram.com/r1chard.alves/" className={styles.icon}>          
+          <a href="https://www.instagram.com/r1chard.alves/" target='_blank' rel='noreferrer' className={styles.icon}>          
             <FaInstagram className='iconTheme'/>
             <p className='textTheme'>Instagram</p>
           </a>

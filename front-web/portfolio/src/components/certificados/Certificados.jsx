@@ -74,7 +74,7 @@ export const Certificados = () => {
       {modalAberto && certSelecionado && (
         <div className="modal-overlay animate-fade-in" onClick={() => setModalAberto(false)}>
 
-          <button className="close-button btnTheme" onClick={() => setModalAberto(false)}>&times;</button>
+          <button className="close-button btnTheme tertiaryborderTheme" onClick={() => setModalAberto(false)}>&times;</button>
           
           <div className="modal-content animate-scale-up" onClick={(e) => e.stopPropagation()}>
             <iframe 

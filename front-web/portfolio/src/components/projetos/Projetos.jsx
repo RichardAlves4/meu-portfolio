@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
-// import "./projetos.css";
 import styles from  "./projetos.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -34,6 +34,8 @@ const organizarImagensPorProjeto = () => {
 const mapaDeImagens = organizarImagensPorProjeto();
 
 const Modal = ({ projeto, onClose }) => {
+  const { t } = useTranslation('pages');
+
   if (!projeto) return null;
 
   const imagensDoProjeto = mapaDeImagens[projeto.pasta] || [];
@@ -44,7 +46,7 @@ const Modal = ({ projeto, onClose }) => {
 
   return (
     <div className={`${styles.modalContainer} ${styles.animateFadeIn}`} onClick={onClose}>
-      <button className={`${styles.btnCloseModal} btnTheme`} onClick={onClose}>X</button>
+      <button className={`${styles.btnCloseModal} btnTheme tertiaryborderTheme`} onClick={onClose}>X</button>
       <div className={`${styles.modalContent} ${styles.animateScaleUp}`} onClick={(e) => e.stopPropagation()}>
         <div className="swiper-container-projects">
           {imagensDoProjeto.length > 0 ? (
@@ -81,28 +83,30 @@ const Modal = ({ projeto, onClose }) => {
         <div className={styles.textModalContent}>
           <h2>{projeto.titulo}</h2>
           <div>
-            <h3>Introdução:</h3>
-            <p>{projeto.introducao}</p>
+            <h3>{t('common:projects.introduction_title')}:</h3>
+            <p>{t(projeto.introducao)}</p>
           </div>
 
           <div>
-            <h3>Objetivo:</h3>
-            <p>{projeto.objetivo}</p>
+            <h3>{t('common:projects.objective_title')}:</h3>
+            <p>{t(projeto.objetivo)}</p>
           </div>
 
           <div>
-            <h3>Tecnologias:</h3>
-            <p>{projeto.front}</p>
-            <p>{projeto.back}</p>
-            <p>{projeto.dados}</p>
+            <h3>{t('common:projects.technologies_title')}:</h3>
+            <p>{t(projeto.front)}</p>
+            <p>{t(projeto.back)}</p>
+            <p>{t(projeto.dados)}</p>
           </div>
 
           <div>
-            <h3>Observações:</h3>
-            <p>{projeto.observacoes}</p>
+            <h3>{t('common:projects.observations_title')}:</h3>
+            <p>{t(projeto.observacoes)}</p>
           </div>
           <div className={styles.btnModalLink}>
-            <button className='btn secondaryBtnTheme tertiaryborderTheme' onClick={() => linkButton(projeto)}>Ver Projeto</button>          
+            <button className='btn secondaryBtnTheme tertiaryborderTheme' onClick={() => linkButton(projeto)}>
+              {t('common:projects.btn_view_project')}
+            </button>    
           </div>
         </div>
       </div>
@@ -112,6 +116,8 @@ const Modal = ({ projeto, onClose }) => {
 
 const Projetos = () => {
   const [projetoSelecionado, setProjetoSelecionado] = useState(null);
+
+  const { t } = useTranslation('pages');
 
   useEffect(() => {
     if (projetoSelecionado) {
@@ -133,10 +139,10 @@ const Projetos = () => {
             <li key={proj.id} className={`${styles.projectContent} textTheme`}>
               <img src={proj.img} alt="" />
               <h3>{proj.titulo}</h3>
-              <p>{proj.resumo}</p>
+              <p>{t(proj.resumo)}</p>
               
               <button className='btn secondaryBtnTheme tertiaryborderTheme' onClick={() => setProjetoSelecionado(proj)}>
-                Ver detalhes
+                {t('common:projects.btn_details')}
               </button>
             </li>
           ))}

@@ -14,7 +14,7 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className=''
+      className='btn secondaryTextTheme secondaryContainerTheme tertiaryborderTheme'
     >
       {currentLanguage.startsWith('pt') ? 'EN' : 'BR'}
     </button>

@@ -6,5 +6,14 @@
     "anchor4":"Projects",
     "anchor5":"Technologies",
     "anchor6":"Contact Us"
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "introduction_title":"Introduction",
+    "objective_title":"Objective",
+    "technologies_title":"Technologies",
+    "observations_title":"Observations",
+    "btn_view_project": "View Projects",
+    "btn_details": "See Details"
   }
 }

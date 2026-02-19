@@ -24,6 +24,7 @@ header {
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   list-style: none;
+  gap: 5px;
 }
 
 .navBar ul hr {
