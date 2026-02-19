@@ -24,6 +24,7 @@
   --secondary-anchor-color: #1c1c1c;
   --primary-border-color: #b9f75d;
   --secondary-border-color: #8d25d5;
+  --tertiary-border-color: none;
 }
 
 [data-theme="dark"] {
@@ -40,6 +41,7 @@
   --secondary-anchor-color: #f0f0f0;
   --primary-border-color: #f0f0f0;
   --secondary-border-color: #f0f0f0;
+  --tertiary-border-color: #f0f0f0;
 }
 
 main {
@@ -116,6 +118,10 @@ main {
 
 .secondaryborderTheme {
   border: 3px solid var(--secondary-border-color);
+}
+
+.tertiaryborderTheme {
+  border: 2px solid var(--tertiary-border-color) !important;
 }
 
 .keyWordTheme {

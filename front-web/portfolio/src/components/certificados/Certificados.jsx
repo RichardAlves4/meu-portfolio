@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import {useTranslation } from "react-i18next";
 
 import "./certificados.css";
 import 'swiper/css';
@@ -11,6 +12,7 @@ import certificados from "./certificadosDB"
 export const Certificados = () => {
   const [modalAberto, setModalAberto] = useState(false);
   const [certSelecionado, setCertSelecionado] = useState(null);
+  const { t } = useTranslation('pages');
 
   useEffect(() => {
     if (modalAberto) {
@@ -53,11 +55,11 @@ export const Certificados = () => {
             <div className="slide-content">
               <div className="text-side secondaryTextTheme">
                 <h2>{cert.titulo}</h2>
-                <p>Instituição: {cert.instituicao}</p>
-                <p>Duração: {cert.duracao}</p>
-                <p>Descrição: {cert.descricao}</p>
-                <button className="btn-certificates btn btnTheme" onClick={() => gerenciarClique(cert)}>
-                  {cert.tipo === 'pdf' ? 'Visualizar Agora' : 'Ver no Site Oficial'}
+                <p>{t('certificates.institution_title')}: {cert.instituicao}</p>
+                <p>{t('certificates.duration_title')}: {t('certificates.duration_text', { count: cert.duracao })}</p>
+                <p>{t('certificates.description_title')}: {t(cert.descricao)}</p>
+                <button className="btn-certificates btn btnTheme tertiaryborderTheme" onClick={() => gerenciarClique(cert)}>
+                  {cert.tipo === 'pdf' ? t('certificates.btn_view1') : t('certificates.btn_view2')}
                 </button>
               </div>
 

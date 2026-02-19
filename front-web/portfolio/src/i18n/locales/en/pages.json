@@ -10,6 +10,22 @@
     "senai_desc": "Technical Course - ADS - Completed.",
     "unip_desc": "higher education - ADS - In progress."
   },
+  "certificates": {
+    "title": "CERTIFICATES",
+    "institution_title":"institution",
+    "duration_title":"duration",
+    "duration_text":" {{count}} hours",
+    "description_title":"Description",
+    "btn_view1": "View now",
+    "btn_view2": "See on the official website",
+    "description_text1": "Basic fundamentals, tools, functionalities, and implementation of Google Cloud services.",
+    "description_text2": "Programming logic, OOP, API, Spring Boot, database, Clean Architecture.",
+    "description_text3": "Cybersecurity, Networking Fundamentals, FCA - FortiGate, Fortinet.",
+    "description_text4": "Basic fundamentals, tools, and functionalities of AWS.",
+    "description_text5": "Basic Excel, Power BI, tools, dashboards.",
+    "description_text6": "Fundamentals from basic to advanced, programming logic, API, ExpressJS.",
+    "description_text7": "NodeJS fundamentals, creating APIs with ExpressJS."
+  },
   "footer": {
     "title": "Network/contact",
     "reserved": "Copyright 2026 - Richard Alves - All rights reserved."

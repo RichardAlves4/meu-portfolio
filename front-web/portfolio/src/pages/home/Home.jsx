@@ -52,7 +52,7 @@ const Home = () => {
       </section>
 
       <section className='secondaryContainerTheme' id='certificates'>
-        <h1 className="titleTheme">CERTIFICADOS</h1>
+        <h1 className="titleTheme">{t('certificates.title')}</h1>
         <Certificados/>
       </section>
 

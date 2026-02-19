@@ -11,6 +11,36 @@
     "senai_desc": "Curso Técnico - ADS - Completo.",
     "unip_desc": "Ensino Superior - ADS - Cursando."
   },
+  "certificates": {
+    "title": "CERTIFICADOS",
+    "institution_title":"Instituição",
+    "duration_title":"duração",
+    "duration_text":" {{count}} horas",
+    "description_title":"Descrição",
+    "btn_view1": "Visualizar Agora",
+    "btn_view2": "Ver no Site Oficial",
+    "description_text1": "Fundamentos básico, ferramentas, funcionalidades e implementação de serviços da Google Cloud.",
+    "description_text2": "Lógica de programação, POO, API, Spring Boot, banco de dados, Clean Architecture.",
+    "description_text3": "Cibersegurança, Networking Fundamentals, FCA - FortiGate, Fortinet.",
+    "description_text4": "Fundamentos básico, ferramentas e funcionalidades da AWS.",
+    "description_text5": "Excel básico, Power BI, ferramentas, Dashboards.",
+    "description_text6": "Fundamentos do básico ao avançado, lógica de programação, API, ExpressJS.",
+    "description_text7": "fundamentos NodeJS, criação de APIs com ExpressJS."
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "introduction_title":"Introdução",
+    "objective_title":"Objetivo",
+    "technologies_title":"Tecnologias",
+    "observations_title":"Observações",
+    "introduction_text":"Introdução",
+    "objective_text":"Objetivo",
+    "technologies_text":"Tecnologias",
+    "observations_text":"Observações",
+    "btn_view_project": "Ver Projeto",
+    "resume": "Cardápio online interativo para instituições de ensino, com o objetivo de reduzir o desperdício de alimentos.",
+    "btn_details": "Ver detalhes"
+  },
   "footer": {
     "title": "Rede/contato",
     "reserved": "Copyright 2026 - Richard Alves - Todos os direitos reservados."

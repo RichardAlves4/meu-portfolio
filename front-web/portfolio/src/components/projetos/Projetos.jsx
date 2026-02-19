@@ -102,7 +102,7 @@ const Modal = ({ projeto, onClose }) => {
             <p>{projeto.observacoes}</p>
           </div>
           <div className={styles.btnModalLink}>
-            <button className='btn secondaryBtnTheme' onClick={() => linkButton(projeto)}>Ver Projeto</button>          
+            <button className='btn secondaryBtnTheme tertiaryborderTheme' onClick={() => linkButton(projeto)}>Ver Projeto</button>          
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ const Projetos = () => {
               <h3>{proj.titulo}</h3>
               <p>{proj.resumo}</p>
               
-              <button className='btn secondaryBtnTheme' onClick={() => setProjetoSelecionado(proj)}>
+              <button className='btn secondaryBtnTheme tertiaryborderTheme' onClick={() => setProjetoSelecionado(proj)}>
                 Ver detalhes
               </button>
             </li>
