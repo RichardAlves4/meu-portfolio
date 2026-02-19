@@ -3,25 +3,19 @@ const formacaoBD = [
         id:1,
         nome: 'SESI',
         conclusao: '12/2024',
-        descricao: 'Ensino médio completo.'
+        descricao: 'formation.sesi_desc'
     },
     {
         id:2,
         nome: 'SENAI',
         conclusao: '12/2025',
-        descricao: 'Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Completo.'
+        descricao: 'formation.senai_desc'
     },
     {
         id:3,
         nome: 'UNIP',
         conclusao: '12/2026',
-        descricao: 'Curso Técnico - ADS(Análise e Desenvolvimento de Sistemas) - Cursando.'
-    },
-    {
-        id:4,
-        nome: 'HASHTAG TREINAMENTOS',
-        conclusao: '',
-        descricao: 'Plataforma de cursos online.'
+        descricao: 'formation.unip_desc'
     }
 ]
 

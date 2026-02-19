@@ -1,13 +1,18 @@
 import { useState } from "react";
-import styles from  "./header.module.css"; 
 import { ThemeSelect } from "../themeSelect/ThemeSelect";
 import { HiMenu } from "react-icons/hi";
+import { LanguageSwitcher } from '../languageSwitcher/LanguageSwitcher';
+import { useTranslation } from "react-i18next";
+
+import styles from  "./header.module.css"; 
 
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { t } = useTranslation('common');
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -27,7 +32,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Sobre
+              {t('navbar.anchor1')}
             </a>
           </li>
 
@@ -39,7 +44,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Formação
+              {t('navbar.anchor2')}
             </a>
           </li>
 
@@ -51,7 +56,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Certificados
+              {t('navbar.anchor3')}
             </a>
           </li>
 
@@ -63,7 +68,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Projetos
+              {t('navbar.anchor4')}
             </a>
           </li>
 
@@ -75,7 +80,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Tecnologias
+              {t('navbar.anchor5')}
             </a>
           </li>
 
@@ -87,7 +92,7 @@ const Header = () => {
               className={`${styles.anchor} secondaryAnchorTheme`}
               onClick={toggleMenu}
             >
-              Contatos
+              {t('navbar.anchor6')}
             </a>
           </li>
         </ul>
@@ -103,13 +108,8 @@ const Header = () => {
       </section>
 
       <section className={styles.itensContainer}>
-        <div>
           <ThemeSelect />
-        </div>
-
-        <div>
-          <button style={{display:'none'}}>BR</button>
-        </div>
+          <LanguageSwitcher/>
       </section>
     </header>
   );

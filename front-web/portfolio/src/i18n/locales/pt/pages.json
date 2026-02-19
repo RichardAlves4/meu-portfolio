@@ -1,0 +1,52 @@
+{
+  "about": {
+    "title": "SOBRE",
+    "description": "Durante o ensino médio tive a grande oportunidade de fazer um <0>curso técnico</0> em <1>ADS no Senai</1>. Nesse curso eu estudei programação por dois anos e tive certeza que gostaria de seguir na área da tecnologia. Nesse curso tive contato com linguagens como <2>HTML e CSS</2>. Também usei linguagens de programação, ferramentas e frameworks como <3>JS</3>, <4>Git/Git Hub</4>, <5>React + Vite</5> entre outros... Durante meu período no Senai também fiz um curso de <6>JAVA</6> e outro de Power BI. Após a graduação em meu curso técnico eu dei inicio ao ensino superior na <7>Unip Paulista</7> onde atualmente estou cursando ADS para aperfeiçoar meu conhecimento e aprender ainda mais. Atualmente estou para dar inicio ao meu terceiro semestre e estou buscando um estágio para conseguir experiência e aprender como lidar com situações reais do coditiano de um programador nas empresas. Atualmente meus <8>objetivos</8> são: Aprender, estudar e conseguir um estágio."
+
+  },
+  "formation": {
+    "title":"FORMAÇÃO",
+    "label_conclusion": "Conclusão",
+    "sesi_desc": "Ensino médio completo.",
+    "senai_desc": "Curso Técnico - ADS - Completo.",
+    "unip_desc": "Ensino Superior - ADS - Cursando."
+  },
+  "certificates": {
+    "title": "CERTIFICADOS",
+    "institution_title":"Instituição",
+    "duration_title":"duração",
+    "duration_text":" {{count}} horas",
+    "description_title":"Descrição",
+    "btn_view1": "Visualizar Agora",
+    "btn_view2": "Ver no Site Oficial",
+    "description_text1": "Fundamentos básico, ferramentas, funcionalidades e implementação de serviços da Google Cloud.",
+    "description_text2": "Lógica de programação, POO, API, Spring Boot, banco de dados, Clean Architecture.",
+    "description_text3": "Cibersegurança, Networking Fundamentals, FCA - FortiGate, Fortinet.",
+    "description_text4": "Fundamentos básico, ferramentas e funcionalidades da AWS.",
+    "description_text5": "Excel básico, Power BI, ferramentas, Dashboards.",
+    "description_text6": "Fundamentos do básico ao avançado, lógica de programação, API, ExpressJS.",
+    "description_text7": "fundamentos NodeJS, criação de APIs com ExpressJS."
+  },
+  "students_cool": {
+    "introduction_text":"O \"Students-cool\" foi o meu TCC no curso técnico de analise e desenvolvimento de sistemas no Senai de Santo André.",
+    "objective_text":"Esse projeto foi criado com o objetivo de diminuir o desperdício de alimentos em instituições de ensino, para atingir esse objetivo eu e o meu grupo criamos um cardápio interativo online (para pc e mobile), onde os responsáveis por distribuir alimentos poderiam informar o cardápio do dia, e os alunos poderiam selecionar exatamente o que iriam consumir, assim os profissionais poderiam calcular com precisão a quantidade a ser produzida, diminuindo o desperdício de comida.",
+    "front_text":"Front-end: HTML, CSS, TypeScript, React, Figma;",
+    "back_text":"Back-end: Java,Spring Boot,Firebase Auth;",
+    "dados_text":"Banco de dados: MySQL;",
+    "observations_text":"Nesse projeto eu atuei no desenvolvimento do front-end e posso afirmar que ele foi o melhor projeto que desenvolvi enquanto estive no Senai. Durante o desenvolvimento aprendi muito sobre como trabalhar em equipe, foi também a partir desse projeto que eu criei gosto pela programação e decidi ter a área como carreira, além disso devo muito a equipe que participou comigo desse projeto, por causa deles eu tive a experiencia de trabalhar em uma equipe unida e animada o que me levou a dar o meu melhor para desenvolver esse projeto. Por esse e outros motivos sou muito grato a eles.",
+    "resume": "Cardápio online interativo para instituições de ensino, com o objetivo de reduzir o desperdício de alimentos."
+  },
+  "pim2": {
+    "introduction_text":"A proposta desse PIM era criar um sistema acadêmico para gerenciar turmas, alunos, aulas e os dados gerados deveriam ser persistentes.",
+    "objective_text":"O principal Objetivo desse projeto era reduzir o desperdício de materiais e papeis, tendo em vista que o sistema seria desenvolvido para uma instituição que fazia tudo manualmente. Por isso eu e minha equipe focamos em tornar esse sistema o mais completo possível.",
+    "front_text":"Front-end: TKinter(nativo python), CustomTKinter(biblioteca).",
+    "back_text":"Back-end: Python, C.",
+    "dados_text":"Banco de dados: Arquivos .json.",
+    "observations_text":"Esse projeto ficou mais extenso do que complexo, pois as tecnologias e conceitos permitidos eram básicos. Por já ter familiaridade com boa parte do que foi usado no projeto, eu não consegui aprender muito da parte de programação. Mas aprendi muito sendo praticamente o QA desse projeto e também aprendi bastante sobre gerenciar/liderar o desenvolvimento de um projeto.",
+    "resume": "PIM é um projeto em equipe multidisciplinar da Unip, sua nota é usada como de uma materia própria e que também entra no calculo da média de cada materia."
+  },
+  "footer": {
+    "title": "Rede/contato",
+    "reserved": "Copyright 2026 - Richard Alves - Todos os direitos reservados."
+  }
+}
